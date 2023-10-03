@@ -84,6 +84,23 @@ public readonly float LeftCenterConfidence;
 
 -----------
 
+### LeftEyeOpenness {#readonly-float-lefteyeopenness}
+
+Openness of the left eye   Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. 
+
+```csharp
+
+public readonly float LeftEyeOpenness;
+
+```
+
+
+
+
+
+
+-----------
+
 ### RightBlink {#readonly-bool-rightblink}
 
   true   if right eye is inside a blink. When not wearing the device, values can be arbitrary. 
@@ -118,6 +135,23 @@ public readonly float RightCenterConfidence;
 
 -----------
 
+### RightEyeOpenness {#readonly-float-righteyeopenness}
+
+Openness of the right eye   Output is 0.0 - 1.0, with 0.0 being fully closed and 1.0 fully open. 
+
+```csharp
+
+public readonly float RightEyeOpenness;
+
+```
+
+
+
+
+
+
+-----------
+
 ### Timestamp {#readonly-timestamp}
 
 Timestamp for all the data fields in this struct 
@@ -130,7 +164,7 @@ public readonly MLTime Timestamp;
 
 | Type | Description  | 
 |--|--|
-| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+| readonly [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 
 
 

@@ -1,4 +1,5 @@
 ---
+id: install-the-tools
 title: Install the Tools
 sidebar_position: 0
 date: 08/29/2022
@@ -28,8 +29,6 @@ To access the Package Manager in the ML Hub:
 1. Open the **ML Hub**.
 2. Select **Package Manager** from the home screen.
 
-![The ML Hub Home Screen with the Package Manager option outlined](/img/ml-hub/package_manager_link.png)
-
 ### Downloading the Unity Bundle
 
 To download the Unity Magic Leap Examples Project from the bundle section:
@@ -38,21 +37,21 @@ To download the Unity Magic Leap Examples Project from the bundle section:
 2. Next, select any additional package. We recommend that you include all the additional packages listed in the Change Summary section.
 3. Click **Apply Changes**.
 
-![ML Hub Package Manager with the Unity packages highlighted](/img/ml-hub/unity_bundle.png)
+<Image url= {require("/img/ml-hub/unity_bundle.png")} >ML Hub Package Manager with the Unity packages highlighted</Image>
 
 ## Install Unity Editor
 
-This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor **version 2022.2.0b7 or higher**.
+This section describes the process of installing the Magic Leap 2 compatible Unity Editor. Developers are able to develop Magic Leap 2 applications with any Unity Editor version **2022.2.0f1 or higher**.
 
 1. Open the Unity Hub application
 2. Select the Installs
 3. Then click the Install Editor button.
-4. With the Install Unity Editor window open, navigate to the Pre-releases section
-5. Select a Unity Editor that is version 2022.2.0b7 or higher
+4. With the Install Unity Editor window open.
+5. Select a Unity Editor version **2022.2.0f1 or higher**.
 6. In the modules screen select  **Android Build Support**, then **Android SDK & NDK Tools**, and **OpenJDK**.
 7. Select the **Continue** button.
 
-![Unity Hub - Install Window](/img/unity/Unity_Install_Modules.png)
+<Image url= {require("/img/unity/Unity_Install_Modules.png")} >Unity Hub - Install Window</Image>
 
 ## Magic Leap Hub Interaction
 

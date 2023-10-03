@@ -19,10 +19,17 @@ keywords: [Unity,Samples, MRTK, Input, UI]
 
 ## Prerequisites
 
-- Magic Leap SDK v1.1.0-dev1
+- Magic Leap SDK
 - MRTK Foundations v2.8 (see [Import MRTK](#import-mrtk) section below)
 - MRTK Examples v2.8 (see [Import MRTK](#import-mrtk) section below)
 - A [configured Magic Leap 2 Unity project](/docs/guides/unity/getting-started/configure-unity-settings.md)
+
+:::note
+
+If updating to Magic Leap Unity SDK 1.10.0 or 1.11.0, there may be a compile issue if your project contains the
+Unity OpenXR package. A workaround for this is to remove the OpenXR package from the project in this situation.
+
+:::
 
 ## Getting Started
 

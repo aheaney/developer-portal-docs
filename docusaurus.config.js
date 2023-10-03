@@ -1,5 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
+const docsVersions = require('./docs-versions.json');
 const pathPrefix = process.env.REACT_APP_DOCUSAURUS_ROOT || ''; // Prefix path of the Docusaurus base URL
 const ADD_ROUTER = process.env.ADD_ROUTER; // development option to force inclusion of the router
 
@@ -14,7 +15,7 @@ if (ADD_ROUTER) {
 const isEmbedded =
   ADD_ROUTER || process.env.REACT_APP_DOCUSAURUS_ROOT !== undefined;
 
-const siteUrl = isEmbedded ? "https://developer.magicleap.cloud" : "http://localhost:3000/"
+const siteUrl = isEmbedded ? "https://developer-docs.magicleap.cloud" : "http://localhost:3000/"
 // When embedded in developer portal the Navbar does not require title, logo and overview
 const navbar = {
   items: [
@@ -49,6 +50,11 @@ const navbar = {
       label: 'Releases',
     },
     {
+      href: 'https://forum.magicleap.cloud',
+      position: 'left',
+      label: 'Forum',
+    },
+    {
       type: 'docsVersionDropdown',
       id: 'docVersion',
       label: 'Version',
@@ -74,7 +80,7 @@ module.exports = {
   organizationName: 'MagicLeap', // Usually your GitHub org/user name.
   projectName: 'developer-portal-docs', // Usually your repo name.
   scripts: scripts,
-  trailingSlash: false, // Helps the redirects work more consistently if true.
+  trailingSlash: true, // Helps the redirects work more consistently if true.
   themeConfig: {
     prism: {
       additionalLanguages: ['csharp', 'bash', 'ini', 'powershell'],
@@ -106,12 +112,12 @@ module.exports = {
           //   from: '/docs/guides/getting-started',
           // },
           {
-            from: '/docs/guides/native/capi-getting-started',
-            to: '/docs/guides/native/getting-started/native-getting-started'
-          },
-          {
             from: '/docs/guides/unity/getting-started/set-up-development-environment',
             to: '/docs/guides/unity/getting-started/unity-getting-started'
+          },
+          {
+            from: '/docs/guides/native/capi-getting-started',
+            to: '/docs/guides/native/getting-started/native-getting-started'
           },
           {
             from: '/docs/guides/developer-tools/lab-tools/ml2-lab-device-stream',
@@ -206,6 +212,40 @@ module.exports = {
             from: '/docs/guides/features/media/fov',
             to: '/docs/guides/device/fov'
           },
+          // Remote Render
+          {
+            from: '/docs/guides/remote-rendering/remote-rendering-service',
+            to: '/docs/guides/remote-rendering/remote-rendering'
+          },
+          {
+            from: '/docs/guides/features/media/ml-camera',
+            to: '/docs/guides/features/ml-camera'
+          },
+          {
+            from: '/docs/guides/features/media/media-codecs',
+            to: '/docs/guides/features/media-codecs'
+          },
+          {
+            from: '/docs/guides/unity/permissions/permissions-levels',
+            to: '/docs/guides/unity/permissions/requesting-permissions'
+          },
+          {
+            from:'/docs/guides/unity/networking/photon-fusion',
+            to: '/docs/guides/third-party/networking/photon-fusion'
+          },
+          {
+            from:`/docs/guides/third-party/ptc`,
+            to: '/docs/guides/third-party/networking/photon-fusion'
+          },
+          // Voice Intent Developer Toolkit
+          {
+            from: '/docs/guides/features/voice-commands/voice-intents-developer-toolkit',
+            to: '/docs/guides/features/voice-commands/voice-intent-development-toolkit'
+          },
+          {
+            from: '/docs/guides/features/spatial-mapping/object-occlusion',
+            to: '/docs/guides/features/object-occlusion'
+          },
         ],
         
         createRedirects(existingPath) {
@@ -219,10 +259,10 @@ module.exports = {
             ];
           }
 
-          if (existingPath.includes('docs/guides/developer-tools/ml-hub/app-sim')) {
+          if (existingPath.includes('/docs/guides/developer-tools/ml-hub/app-sim')) {
           // Redirect docs/guides/developer-tools/ml-hub/app-sim to docs/guides/developer-tools/app-sim
           return [
-            existingPath.replace('docs/guides/developer-tools/ml-hub/app-sim/', 'docs/guides/developer-tools/app-sim/'),
+            existingPath.replace('/docs/guides/developer-tools/ml-hub/app-sim/', '/docs/guides/developer-tools/app-sim/'),
           ];
         }
 
@@ -253,8 +293,8 @@ module.exports = {
     [
       'ideal-image',
       {
-        quality: 70,
-        max: 1030, // max resized image's size.
+        quality: 80,
+        max: 1920, // max resized image's size.
         min: 640, // min resized image's size. if original is lower, use that size.
         steps: 2, // the max number of images generated between min and max (inclusive)
         // disableInDev: false,
@@ -275,17 +315,7 @@ module.exports = {
           editUrl: undefined,
           includeCurrentVersion: true,
           lastVersion: 'current',
-          versions: {
-            current: {
-              label: '26 Apr 2023'
-            },
-            '22-Mar-2023': {
-              label: '22 Mar 2023'
-            },
-            // '22-Mar-2023': {
-            //   label: '22 Mar 2023'
-            // },
-          },
+          versions: docsVersions,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

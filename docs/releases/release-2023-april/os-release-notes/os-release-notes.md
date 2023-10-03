@@ -5,15 +5,15 @@ sidebar_position: 0
 date: 04/24/2023
 ---
 
-## Magic Leap OS - April 2023 - B3E.230330.11-R.043
+## Magic Leap OS - 1.2.0
 
 **Don’t forget:** Some Magic Leap hardware and software features are in a pre-release state and might not be available, might contain bugs or defects, and might experience delays or failures. Read this document for guidance on the current state of Magic Leap hardware and software. This guidance helps developers make the best possible use of the Magic Leap platform.
 
 ## Flashing Instructions
 
-Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so.
+Before flashing make sure to power cycle your device without the cable plugged in. Hold down the power button for 20 seconds to do so. 
 
-When flashing, you **MUST** flash in a linear sequence based on the build order in the table below but can skip up to four releases ahead. For example, if you're on `B3E.220818.12-R.417_user` (build order #9), you may skip ahead up to `B3E.230302.12-R.024` (build order #13), then `B3E.230330.11-R.043` (build order #14) for your device to work properly for the current release.
+When flashing, you **MUST** flash in a linear sequence based on the build order in the table below. For example, if you're on B3E.220619.07-R.107_user (build order #4), you MUST flash B3E.220619.07-R.124_user (build order #5) then B3E.220721.07-R.026_user (build order #6) for your device to work properly with that OS.
 
 | Build Order | Build Fingerprint        |
 | ----------- | ------------------------ |

@@ -33,10 +33,7 @@ using MagicLeapCamera =  UnityEngine.XR.MagicLeap.MagicLeapCamera;
 ## Source code
 
 ```csharp
-using UnityEditor.AnimatedValues;
 using UnityEngine;
-using UnityEngine.XR.MagicLeap;
-using UnityEngine.XR.MagicLeap.Rendering;
 using MagicLeapCamera = UnityEngine.XR.MagicLeap.MagicLeapCamera;
 
 namespace UnityEditor.XR.MagicLeap
@@ -76,7 +73,7 @@ namespace UnityEditor.XR.MagicLeap
             serializedObject.Update();
 
             EditorGUILayout.PropertyField(fixeIssuesProp, fixIssuesText);
-            EditorGUILayout.PropertyField(enforceNearClipProp, nearClipText);
+            //EditorGUILayout.PropertyField(enforceNearClipProp, nearClipText);
             EditorGUILayout.PropertyField(enforceFarClipProp, farClipText);
 
             EditorGUILayout.ObjectField(stereoConvergencePointProp, typeof(Transform), stereoConvergencePointText);

@@ -34,7 +34,7 @@ title: Audio Definitions
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[MLAudioMicCaptureType](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype)** <br></br> { <br></br>[MLAudioMicCaptureType_VoiceComm](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecomm),<br></br> [MLAudioMicCaptureType_VoiceCapture](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecapture),<br></br> [MLAudioMicCaptureType_WorldCapture](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-worldcapture) =4,<br></br> [MLAudioMicCaptureType_Ensure32Bits](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-ensure32bits) =0x7FFFFFFF<br></br>}<br></br>The type of mic input to capture.  |
+| enum | **[MLAudioMicCaptureType](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype)** <br></br> { <br></br>[MLAudioMicCaptureType_VoiceComm](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecomm),<br></br> [MLAudioMicCaptureType_VoiceCapture](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-voicecapture),<br></br> [MLAudioMicCaptureType_WorldCapture](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-worldcapture) =4,<br></br> [MLAudioMicCaptureType_RawMicsAndAECRef](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-rawmicsandaecref),<br></br> [MLAudioMicCaptureType_Ensure32Bits](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#enums-mlaudiomiccapturetype-ensure32bits) =0x7FFFFFFF<br></br>}<br></br>The type of mic input to capture.  |
 
 ## Attributes
 
@@ -77,8 +77,8 @@ title: Audio Definitions
 | uint32_t | **[samples_per_second](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-samples-per-second)**  |
 | uint32_t | **[bits_per_sample](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-bits-per-sample)**  |
 | uint32_t | **[valid_bits_per_sample](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-valid-bits-per-sample)**  |
-| [MLAudioSampleFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md#enums-mlaudiosampleformat) | **[sample_format](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiosampleformat-sample-format)**  |
-| [MLAudioChannelFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering.md#enums-mlaudiochannelformat) | **[channel_format](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiochannelformat-channel-format)**  |
+| [MLAudioSampleFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md#enums-mlaudiosampleformat) | **[sample_format](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiosampleformat-sample-format)**  |
+| [MLAudioChannelFormat](/api-ref/api/Modules/group___audio/group___audio_defs/group___def_acoustics/group___def_buffering/group___def_buffering.md#enums-mlaudiochannelformat) | **[channel_format](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#mlaudiochannelformat-channel-format)**  |
 | uint8_t * | **[ptr](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint8-t-ptr)**  |
 | uint32_t | **[size](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#uint32-t-size)**  |
 | float * | **[values](/api-ref/api/Modules/group___audio/group___audio_defs/group___audio_defs.md#float-values)**  |
@@ -101,9 +101,10 @@ AUDIO DEFINITIONS.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLAudioMicCaptureType_VoiceComm | | User voice, suitable for communications.Mono, 16 bit integer, 16k sampling rate. |
-| MLAudioMicCaptureType_VoiceCapture | | High fidelity user voice, suitable for recording.Mono, 16 bit integer, 48k sampling rate. |
-| MLAudioMicCaptureType_WorldCapture |  =4| Mic mix representing the user's surroundings.Stereo, 16 bit integer, 48k sampling rate. |
+| MLAudioMicCaptureType_VoiceComm | | User voice, suitable for communications. Mono, 16 bit integer, 16k sampling rate. |
+| MLAudioMicCaptureType_VoiceCapture | | High fidelity user voice, suitable for recording. Mono, 16 bit integer, 48k sampling rate. |
+| MLAudioMicCaptureType_WorldCapture |  =4| Mic mix representing the user's surroundings. Stereo, 16 bit integer, 48k sampling rate. |
+| MLAudioMicCaptureType_RawMicsAndAECRef | | All 4 mics unprocessed (front L/R, side L/R) + AEC return from amp (L/R). Channel layout: 1 - Front L, 2 - Front R, 3 - Side L, 4 - Side R, 5 - AEC return L, 6 - AEC return R. DC Offset and/or background hum may be present on channels 1-4 due to lack of processing. 6-channel, 16 bit integer, 48k sampling rate. |
 | MLAudioMicCaptureType_Ensure32Bits |  =0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -114,7 +115,7 @@ The type of mic input to capture.
 
 
 **API Level:**
-  * 20
+  * 29
 
 
 

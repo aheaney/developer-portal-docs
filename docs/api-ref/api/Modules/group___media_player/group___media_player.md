@@ -164,9 +164,9 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | enum | **[MLCea608CaptionDimension](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captiondimension)** <br></br> { <br></br>[MLCea608_CCMaxRows](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ccmaxrows) = 15,<br></br> [MLCea608_CCMaxCols](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ccmaxcols) = 32,<br></br> [MLCea608_CCMaxRowsPlus2](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ccmaxrowsplus2) = 17,<br></br> [MLCea608_CCMaxColsPlus2](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ccmaxcolsplus2) = 34,<br></br> [MLCea608_CCMaxRowsCols_Ensure32Bits](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ccmaxrowscols-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea608 Caption Dimension constants.  |
 | enum | **[MLCea608CaptionColor](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor)** <br></br> { <br></br>[MLCea608CaptionColor_White](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-white) = 0,<br></br> [MLCea608CaptionColor_Green](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-green) = 1,<br></br> [MLCea608CaptionColor_Blue](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-blue) = 2,<br></br> [MLCea608CaptionColor_Cyan](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-cyan) = 3,<br></br> [MLCea608CaptionColor_Red](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-red) = 4,<br></br> [MLCea608CaptionColor_Yellow](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-yellow) = 5,<br></br> [MLCea608CaptionColor_Magenta](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-magenta) = 6,<br></br> [MLCea608CaptionColor_Invalide](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-invalide) = 7,<br></br> [MLCea608CaptionColor_Ensure32Bits](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captioncolor-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea608 caption color code.  |
 | enum | **[MLCea608CaptionStyle](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captionstyle)** <br></br> { <br></br>[MLCea608CaptionStyle_Italics](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captionstyle-italics) = 0x00000001,<br></br> [MLCea608CaptionStyle_Underline](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captionstyle-underline) = 0x00000002,<br></br> [MLCea608CaptionStyle_Ensure32Bits](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608captionstyle-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea608 caption style code.  |
-| enum | **[Anonymous Enum 15](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-15)** <br></br> { <br></br>[MLCea608_TS](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ts) = 0x00A0<br></br>} |
-| enum | **[Anonymous Enum 16](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-16)** <br></br> { <br></br>[MLCea708CaptionWindows_Max](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionwindows-max) = 8<br></br>}<br></br>Cea708 Caption maximum windows constant.  |
-| enum | **[Anonymous Enum 17](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-17)** <br></br> { <br></br>[MLCea708CaptionEmitCommandBuffer_MaxSize](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandbuffer-maxsize) = 20<br></br>}<br></br>Maximum size for Cea708 Caption Emit command buffers.  |
+| enum | **[Anonymous Enum 16](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-16)** <br></br> { <br></br>[MLCea608_TS](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea608-ts) = 0x00A0<br></br>} |
+| enum | **[Anonymous Enum 17](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-17)** <br></br> { <br></br>[MLCea708CaptionWindows_Max](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionwindows-max) = 8<br></br>}<br></br>Cea708 Caption maximum windows constant.  |
+| enum | **[Anonymous Enum 18](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-anonymous-enum-18)** <br></br> { <br></br>[MLCea708CaptionEmitCommandBuffer_MaxSize](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandbuffer-maxsize) = 20<br></br>}<br></br>Maximum size for Cea708 Caption Emit command buffers.  |
 | enum | **[MLCea708CaptionEmitCommand](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand)** <br></br> { <br></br>[MLCea708CaptionEmitCommand_Buffer](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-buffer) = 1,<br></br> [MLCea708CaptionEmitCommand_Control](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-control) = 2,<br></br> [MLCea708CaptionEmitCommand_CWX](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-cwx) = 3,<br></br> [MLCea708CaptionEmitCommand_CLW](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-clw) = 4,<br></br> [MLCea708CaptionEmitCommand_DSW](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-dsw) = 5,<br></br> [MLCea708CaptionEmitCommand_HDW](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-hdw) = 6,<br></br> [MLCea708CaptionEmitCommand_TGW](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-tgw) = 7,<br></br> [MLCea708CaptionEmitCommand_DLW](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-dlw) = 8,<br></br> [MLCea708CaptionEmitCommand_DLY](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-dly) = 9,<br></br> [MLCea708CaptionEmitCommand_DLC](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-dlc) = 10,<br></br> [MLCea708CaptionEmitCommand_RST](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-rst) = 11,<br></br> [MLCea708CaptionEmitCommand_SPA](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-spa) = 12,<br></br> [MLCea708CaptionEmitCommand_SPC](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-spc) = 13,<br></br> [MLCea708CaptionEmitCommand_SPL](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-spl) = 14,<br></br> [MLCea708CaptionEmitCommand_SWA](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-swa) = 15,<br></br> [MLCea708CaptionEmitCommand_DFX](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-dfx) = 16,<br></br> [MLCea708CaptionEmitCommand_Ensure32Bits](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Emit Commands constants.  |
 | enum | **[MLCea708CaptionEmitCommandControl](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol)** <br></br> { <br></br>[MLCea708CaptionEmitCommandControl_ETX](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol-etx) = 0x03,<br></br> [MLCea708CaptionEmitCommandControl_BS](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol-bs) = 0x08,<br></br> [MLCea708CaptionEmitCommandControl_FF](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol-ff) = 0x0c,<br></br> [MLCea708CaptionEmitCommandControl_HCR](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol-hcr) = 0x0e,<br></br> [MLCea708CaptionEmitCommandControl_Ensure32Bits](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captionemitcommandcontrol-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Emit Command Control constants.  |
 | enum | **[MLCea708CaptionColorOpacity](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity)** <br></br> { <br></br>[MLCea708CaptionColorOpacity_SOLID](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity-solid) = 0,<br></br> [MLCea708CaptionColorOpacity_FLASH](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity-flash) = 1,<br></br> [MLCea708CaptionColorOpacity_TRANSLUCENT](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity-translucent) = 2,<br></br> [MLCea708CaptionColorOpacity_TRANSPARENT](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity-transparent) = 3,<br></br> [MLCea708CaptionColorOpacity_Ensure32Bits](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlcea708captioncoloropacity-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Cea708 Caption Color Opacity constants.  |
@@ -283,14 +283,14 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | void | **[MLMediaDRMEventCallbacksInit](/api-ref/api/Modules/group___media_player/group___media_player.md#void-mlmediadrmeventcallbacksinit)**([MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * inout_callbacks)<br></br>Initializes [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) with default values.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayallocate)**(size_t size, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_array)<br></br>Allocate byte array buffer.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayAllocAndCopy](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayallocandcopy)**(const uint8_t * copy_from, size_t size, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_array)<br></br>Allocate and Copy to byte array buffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayallocate)**(size_t size, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Allocate array of {key, value} pairs.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAllocate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayallocate)**(size_t size, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Allocate array of key/value pairs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMCreate](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmcreate)**([MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) uuid, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Create a MLMediaDRM instance from a UUID.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrelease)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm)<br></br>Release the MLMediaDRM instance.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease)**([MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * array)<br></br>Release byte array buffer.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMByteArrayListRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearraylistrelease)**([MLMediaDRMByteArrayList](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array_list.md) * array)<br></br>Release list of byte array buffer.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease)**([MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * array)<br></br>Release {key, value} pair array.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease)**([MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * array)<br></br>Release key/value pair array.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMRequestMessageRelease](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmrequestmessagerelease)**([MLMediaDRMRequestMessage](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_request_message.md) * request)<br></br>Release Request Message.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAdd](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayadd)**(const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * pair, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Add a {key, value} pair to the array of {key, value} pairs.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMKeyValueArrayAdd](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayadd)**(const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * pair, [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * out_array)<br></br>Add a key/value pair to the array of key/value pairs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMIsCryptoSchemeSupported](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmiscryptoschemesupported)**([MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) uuid, const char * mime_type, bool * out_supported)<br></br>Query if the given scheme identified by its UUID is supported on this device. And whether the drm plugin is able to handle the media container format.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMSetOnEventListenerEx](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsetoneventlistenerex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) * callbacks, void * data)<br></br>Register a callback to be invoked when DRM events or updates or status change occurs.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaDRMOpenSession](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmopensession)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) media_drm, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * out_session_id)<br></br>Opens a new session. A session ID is returned.  |
@@ -329,7 +329,7 @@ Defines Audio Channel Mask to describe the input/output posistion. Position impl
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorSelectTrack](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorselecttrack)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, size_t index)<br></br>Select a track for the subsequent operations.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorUnselectTrack](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorunselecttrack)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, size_t index)<br></br>Unselect a track for the subsequent operations.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorSeekTo](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorseekto)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, int64_t time_us, [MLMediaSeekMode](/api-ref/api/Modules/group___media_player/group___media_player.md#enums-mlmediaseekmode) mode)<br></br>All selected tracks seek near the requested time according to the specified mode.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorAdvance](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractoradvance)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Advance to the next sample. Returns `false` if no more sample data is available (end of stream).  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorAdvance](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractoradvance)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Advance to the next sample.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorReadSampleData](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorreadsampledata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint8_t * byte_buf, size_t buf_size, size_t offset, int64_t * out_data_size)<br></br>Retrieve the current encoded sample and store it in the byte buffer starting at the given offset.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorGetSampleTrackIndex](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorgetsampletrackindex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, int64_t * out_track_index)<br></br>Return the track index the current sample originates from.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLMediaExtractorGetSampleTime](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediaextractorgetsampletime)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, int64_t * out_sample_time)<br></br>Return the current sample's presentation time in microseconds.  |
@@ -879,7 +879,7 @@ Cea608 caption style code.
 
 -----------
 
-### Anonymous Enum 15 {#enums-anonymous-enum-15}
+### Anonymous Enum 16 {#enums-anonymous-enum-16}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -894,7 +894,7 @@ Cea608 caption style code.
 
 -----------
 
-### Anonymous Enum 16 {#enums-anonymous-enum-16}
+### Anonymous Enum 17 {#enums-anonymous-enum-17}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -915,7 +915,7 @@ Cea708 Caption maximum windows constant.
 
 -----------
 
-### Anonymous Enum 17 {#enums-anonymous-enum-17}
+### Anonymous Enum 18 {#enums-anonymous-enum-18}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -942,12 +942,12 @@ Maximum size for Cea708 Caption Emit command buffers.
 | ---------- | ----- | ----------- |
 | MLCea708CaptionEmitCommand_Buffer |  1| Buffer. |
 | MLCea708CaptionEmitCommand_Control |  2| Control. |
-| MLCea708CaptionEmitCommand_CWX |  3| SetCurrentWindow tells the caption decoder which window the following commands describe: .* SetWindowAttributes* SetPenAttributes* SetPenColor* SetPenLocation. If the window specified has not already been created with a DefineWindow command then, SetCurrentWindow and the window property commands can be safely ignored. |
+| MLCea708CaptionEmitCommand_CWX |  3| SetCurrentWindow tells the caption decoder which window the following commands describe: * SetWindowAttributes* SetPenAttributes* SetPenColor* SetPenLocation. If the window specified has not already been created with a DefineWindow command then, SetCurrentWindow and the window property commands can be safely ignored. |
 | MLCea708CaptionEmitCommand_CLW |  4| ClearWindows clears all the windows specified in the 8 bit window bitmap. |
 | MLCea708CaptionEmitCommand_DSW |  5| DisplayWindows displays all the windows specified in the 8 bit window bitmap. |
 | MLCea708CaptionEmitCommand_HDW |  6| HideWindows hides all the windows specified in the 8 bit window bitmap. |
 | MLCea708CaptionEmitCommand_TGW |  7| ToggleWindows hides all displayed windows, and displays all hidden windows specified in the 8 bit window bitmap. |
-| MLCea708CaptionEmitCommand_DLW |  8| DeleteWindows deletes all the windows specified in the 8 bit window bitmap. If the current window, as specified by the last SetCurrentWindow command, is deleted then the current window becomes undefined and the window attribute commands should have no effect until after the next SetCurrentWindow or DefineWindow command. .|
+| MLCea708CaptionEmitCommand_DLW |  8| DeleteWindows deletes all the windows specified in the 8 bit window bitmap. If the current window, as specified by the last SetCurrentWindow command, is deleted then the current window becomes undefined and the window attribute commands should have no effect until after the next SetCurrentWindow or DefineWindow command. |
 | MLCea708CaptionEmitCommand_DLY |  9| Delay suspends all processing of the current service, except for DelayCancel and Reset scanning. |
 | MLCea708CaptionEmitCommand_DLC |  10| DelayCancel terminates any active delay and resumes normal command processing. DelayCancel should be scanned for during a Delay. |
 | MLCea708CaptionEmitCommand_RST |  11| Reset deletes all windows, cancels any active delay, and clears the buffer before the Reset command. Reset should be scanned for during a Delay. |
@@ -1116,7 +1116,7 @@ Media codec type.
 | MLMediaCodecBufferFlag_KeyFrame |  1| The (encoded) buffer contains the data for a key frame. |
 | MLMediaCodecBufferFlag_CodecConfig |  2| Buffer contains codec initialization OR codec specific data instead of media data. |
 | MLMediaCodecBufferFlag_EOS |  4| Signals the end of stream, i.e. no buffers will be available after this. |
-| MLMediaCodecBufferFlag_PartialFrame |  8| Buffer only contains part of a frame, and the decoder should batch the data until a buffer without this flag appears before decoding the frame. .|
+| MLMediaCodecBufferFlag_PartialFrame |  8| Buffer only contains part of a frame, and the decoder should batch the data until a buffer without this flag appears before decoding the frame. |
 | MLMediaCodecBufferFlag_MuxerData |  16| Buffer contains muxer data - Supported only for Exif data block. |
 | MLMediaCodecBufferFlag_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -1258,11 +1258,11 @@ Bit mask for checking the capability of a codec after queried via [MLMediaCodecL
 | MLMediaCodecColorFormat_24BitABGR6666 | | 24BitABGR6666. |
 | MLMediaCodecColorFormat_KhronosExtensions |  0x6F000000| Reserved region for introducing Khronos Standard Extensions. |
 | MLMediaCodecColorFormat_VendorStartUnused |  0x7F000000| Reserved region for introducing Vendor Extensions. |
-| MLMediaCodecColorFormat_AndroidOpaque |  0x7F000789| Reserved android opaque color format. Tells the encoder that the actual color format will be relayed by the Graphics memory allocator Buffers. .|
+| MLMediaCodecColorFormat_AndroidOpaque |  0x7F000789| Reserved android opaque color format. Tells the encoder that the actual color format will be relayed by the Graphics memory allocator Buffers. |
 | MLMediaCodecColorFormat_32BitRGBA8888 |  0x7F00A000| 32BitRGBA8888. |
-| MLMediaCodecColorFormat_YUV420Flexible |  0x7F420888| Flexible 8-bit YUV format. Codec should report this format as being supported if it supports any YUV420 packed planar or semiplanar formats. When port is set to use this format, codec can substitute any YUV420 packed planar or semiplanar format for it. .|
+| MLMediaCodecColorFormat_YUV420Flexible |  0x7F420888| Flexible 8-bit YUV format. Codec should report this format as being supported if it supports any YUV420 packed planar or semiplanar formats. When port is set to use this format, codec can substitute any YUV420 packed planar or semiplanar format for it. |
 | MLMediaCodecColorFormat_YUV420Planar16 |  0x7F42016B| 10-bit or 12-bit YUV format, LSB-justified (0's on higher bits). |
-| MLMediaCodecColorFormat_YUV444Y410 |  0x7F444AAA| Packed 10-bit YUV444 representation that includes 2 bits of alpha. Each pixel is 32-bit. Bits 0-9 contain the U sample, bits 10-19 contain the Y sample, bits 20-29 contain the V sample, and bits 30-31 contain the alpha value. .|
+| MLMediaCodecColorFormat_YUV444Y410 |  0x7F444AAA| Packed 10-bit YUV444 representation that includes 2 bits of alpha. Each pixel is 32-bit. Bits 0-9 contain the U sample, bits 10-19 contain the Y sample, bits 20-29 contain the V sample, and bits 30-31 contain the alpha value. |
 | MLMediaCodecColorFormat_TIYUV420PackedSemiPlanar |  0x7F000100| TI's YUV420PackedSemiPlanar. |
 | MLMediaCodecColorFormat_QCOMYVU420SemiPlanar |  0x7FA30C00| QCOM's YVU420SemiPlanar. |
 | MLMediaCodecColorFormat_QCOMYUV420PackedSemiPlanar64x32Tile2m8ka |  0x7FA30C03| QCOM's YUV420PackedSemiPlanar64x32Tile2m8ka. |
@@ -1289,7 +1289,7 @@ Enumeration defining possible uncompressed image/video formats.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaCodecPriority_RealTime |  0| Realtime priority. .The codec shall support the given performance configuration (e.g. framerate) at realtime. This should only be used by media playback, capture, and possibly by realtime communication scenarios if best effort performance is not suitable. |
+| MLMediaCodecPriority_RealTime |  0| Realtime priority. The codec shall support the given performance configuration (e.g. framerate) at realtime. This should only be used by media playback, capture, and possibly by realtime communication scenarios if best effort performance is not suitable. |
 | MLMediaCodecPriority_NonRealTime |  1| Non-realtime priority (best effort). |
 | MLMediaCodecPriority_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 Bits. |
 
@@ -1581,8 +1581,8 @@ Mode indicating where exactly to seek to.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaDRMKeyType_Streaming |  1| This key request type specifies that the keys will be for online use, they will not be saved to the device for subsequent use when the device is not connected to a network. .|
-| MLMediaDRMKeyType_Offline |  2| This key request type specifies that the keys will be for offline use, they will be saved to the device for use when the device is not connected to a network. .|
+| MLMediaDRMKeyType_Streaming |  1| This key request type specifies that the keys will be for online use, they will not be saved to the device for subsequent use when the device is not connected to a network. |
+| MLMediaDRMKeyType_Offline |  2| This key request type specifies that the keys will be for offline use, they will be saved to the device for use when the device is not connected to a network. |
 | MLMediaDRMKeyType_Release |  3| This key request type specifies that previously saved offline keys should be released. |
 | MLMediaDRMKeyType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -1601,13 +1601,13 @@ Request types.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMediaDRMEventType_ProvisionRequired |  1| This event type indicates that the app needs to request a certificate from the provisioning server. The request message data is obtained using [MLMediaDRMGetProvisionRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetprovisionrequest). .|
-| MLMediaDRMEventType_KeyRequired |  2| This event type indicates that the app needs to request keys from a license server. The request message data is obtained using [MLMediaDRMGetKeyRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetkeyrequest). .|
-| MLMediaDRMEventType_KeyExpired |  3| This event type indicates that the licensed usage duration for keys in a session has expired. The keys are no longer valid. .|
-| MLMediaDRMEventType_VendorDefined |  4| This event may indicate some specific vendor-defined condition, see your DRM provider documentation for details. .|
-| MLMediaDRMEventType_SessionReclaimed |  5| This event indicates that a session opened by the app has been reclaimed by the resource manager. .|
-| MLMediaDRMEventType_ExpirationUpdate |  6| This event is issued when a session expiration update occurs, to inform the app about the change in expiration time. .If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_expiration_update callback, then this event is not notified. |
-| MLMediaDRMEventType_KeysChange |  7| This event is issued when the keys in a session change status, such as when the license is renewed or expires. .If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_key_status_change callback, then this event is not notified. |
+| MLMediaDRMEventType_ProvisionRequired |  1| This event type indicates that the app needs to request a certificate from the provisioning server. The request message data is obtained using [MLMediaDRMGetProvisionRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetprovisionrequest). |
+| MLMediaDRMEventType_KeyRequired |  2| This event type indicates that the app needs to request keys from a license server. The request message data is obtained using [MLMediaDRMGetKeyRequest()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmgetkeyrequest). |
+| MLMediaDRMEventType_KeyExpired |  3| This event type indicates that the licensed usage duration for keys in a session has expired. The keys are no longer valid. |
+| MLMediaDRMEventType_VendorDefined |  4| This event may indicate some specific vendor-defined condition, see your DRM provider documentation for details. |
+| MLMediaDRMEventType_SessionReclaimed |  5| This event indicates that a session opened by the app has been reclaimed by the resource manager. |
+| MLMediaDRMEventType_ExpirationUpdate |  6| This event is issued when a session expiration update occurs, to inform the app about the change in expiration time. If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_expiration_update callback, then this event is not notified. |
+| MLMediaDRMEventType_KeysChange |  7| This event is issued when the keys in a session change status, such as when the license is renewed or expires. If [MLMediaDRMEventCallbacks](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_event_callbacks.md) is setup with a valid on_key_status_change callback, then this event is not notified. |
 | MLMediaDRMEventType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -1631,9 +1631,9 @@ Request event types.
 | ---------- | ----- | ----------- |
 | MLMediaDRMKeyStatusCode_KeyStatusUsable |  0| The key is currently usable to decrypt media data. |
 | MLMediaDRMKeyStatusCode_KeyStatusExpired |  1| The key is no longer usable to decrypt media data because its expiration time has passed. |
-| MLMediaDRMKeyStatusCode_KeyStatusOutputNotAllowed |  2| The key is not currently usable to decrypt media data because its output requirements cannot currently be met. .|
-| MLMediaDRMKeyStatusCode_KeyStatusPending |  3| The status of the key is not yet known and is being determined. The status will be updated with the actual status when it has been determined. .|
-| MLMediaDRMKeyStatusCode_KeyStatusInternalError |  4| The key is not currently usable to decrypt media data because of an internal error in processing unrelated to input parameters. This error is not actionable by an app. .|
+| MLMediaDRMKeyStatusCode_KeyStatusOutputNotAllowed |  2| The key is not currently usable to decrypt media data because its output requirements cannot currently be met. |
+| MLMediaDRMKeyStatusCode_KeyStatusPending |  3| The status of the key is not yet known and is being determined. The status will be updated with the actual status when it has been determined. |
+| MLMediaDRMKeyStatusCode_KeyStatusInternalError |  4| The key is not currently usable to decrypt media data because of an internal error in processing unrelated to input parameters. This error is not actionable by an app. |
 | MLMediaDRMKeyStatusCode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -1770,7 +1770,7 @@ Codes for setting video scaling mode.
 | MLMediaPlayerPollingStateFlag_HasSizeChanged |  1 << 5| Size changed. |
 | MLMediaPlayerPollingStateFlag_HasBufferingUpdated |  1 << 6| Buffering updated. |
 | MLMediaPlayerPollingStateFlag_HasReceivedInfo |  1 << 7| Received info. |
-| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Recieved error. |
+| MLMediaPlayerPollingStateFlag_HasReceivedError |  1 << 8| Received error. |
 | MLMediaPlayerPollingStateFlag_HasTimedTextUpdated |  1 << 9| Timed text updated. |
 | MLMediaPlayerPollingStateFlag_HasSubtitleUpdated |  1 << 10| Subtitle updated. |
 | MLMediaPlayerPollingStateFlag_HasMetadataUpdated |  1 << 11| Metadata updated. |
@@ -1868,7 +1868,7 @@ MediaTrack types returned by [MLMediaPlayerGetTrackType()](/api-ref/api/Modules/
 | MLMediaPlayerBufferingMode_None |  0| Do not support buffering. |
 | MLMediaPlayerBufferingMode_TimeOnly |  1| Support only time based buffering. |
 | MLMediaPlayerBufferingMode_SizeOnly |  2| Support only size based buffering. |
-| MLMediaPlayerBufferingMode_TimeThenSize |  3| Support both time and size based buffering, time based calculation precedes size based. Size based calculation will be used only when time information is not available for the stream. .|
+| MLMediaPlayerBufferingMode_TimeThenSize |  3| Support both time and size based buffering, time based calculation precedes size based. Size based calculation will be used only when time information is not available for the stream. |
 | MLMediaPlayerBufferingMode_Count |  4| Number of modes. |
 | MLMediaPlayerBufferingMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum size is 32 bits. |
 
@@ -2827,7 +2827,7 @@ typedef struct MLMediaDRMKeyValue MLMediaDRMKeyValue;
 ```
 
 
-Data type containing {key, value} pair. 
+Data type containing key/value pair. 
 
 
 
@@ -2844,7 +2844,7 @@ typedef struct MLMediaDRMKeyValueArray MLMediaDRMKeyValueArray;
 ```
 
 
-Data type containing array of {key, value} pair. 
+Data type containing array of key/value pair. 
 
 
 
@@ -6478,14 +6478,14 @@ MLResult MLMediaDRMKeyValueArrayAllocate(
 )
 ```
 
-Allocate array of {key, value} pairs. 
+Allocate array of key/value pairs. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| size_t |size|Maximum size of the desirable array of {key, value} pair to be allocated. |
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
+| size_t |size|Maximum size of the desirable array of key/value pair to be allocated. |
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of key/value pair that needs to be allocated. To free/release, call [MLMediaDRMKeyValueArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmkeyvaluearrayrelease).|
 
 **Returns**
 
@@ -6493,7 +6493,7 @@ Allocate array of {key, value} pairs.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_AllocFailed|Failed because of allocation failure. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array is allocated successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Key/value pair array is allocated successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -6653,20 +6653,20 @@ MLResult MLMediaDRMKeyValueArrayRelease(
 )
 ```
 
-Release {key, value} pair array. 
+Release key/value pair array. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|{key, value} pair array that needs to be released.|
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |array|Key/value pair array that needs to be released.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair array was released successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Key/value pair array was released successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -6722,21 +6722,21 @@ MLResult MLMediaDRMKeyValueArrayAdd(
 )
 ```
 
-Add a {key, value} pair to the array of {key, value} pairs. 
+Add a key/value pair to the array of key/value pairs. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source {key, value} pair that needs to be added. |
-| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of {key, value} pair to which the pair needs to be added to.|
+| const [MLMediaDRMKeyValue](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value.md) * |pair|The source key/value pair that needs to be added. |
+| [MLMediaDRMKeyValueArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_key_value_array.md) * |out_array|Pointer to array of key/value pair to which the pair needs to be added to.|
 
 **Returns**
 
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|{key, value} pair is added successfully. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|key/value pair is added successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -7094,7 +7094,7 @@ Request an informative description of the key status for the session.
   * None 
 
 
-The status is in the form of {key, value} pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin.
+The status is in the form of key/value pairs. Since DRM license policies vary by vendor, the specific status field names are determined by each DRM vendor. Refer to your DRM provider documentation for definitions of the field names for a particular DRM engine plugin.
 
 
 
@@ -7359,10 +7359,10 @@ Read a DRM engine plugin String property value, given the property name.
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_Vendor
-* MLMediaDRMProperty_Version
-* MLMediaDRMProperty_Description
-* MLMediaDRMProperty_Algorithms |
+* MLMediaDRMProperty_Vendor.
+* MLMediaDRMProperty_Version.
+* MLMediaDRMProperty_Description.
+* MLMediaDRMProperty_Algorithms. |
 | char ** |out_property_value|The property value upon successful return. Ownership is passed, call free(*out_property_value) to free it.|
 
 **Returns**
@@ -7402,7 +7402,7 @@ Read a DRM engine plugin byte array property value, given the property name.
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_DeviceUniqueID |
+* MLMediaDRMProperty_DeviceUniqueID. |
 | [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |out_property_value|The property value upon successful return. To release/free call [MLMediaDRMByteArrayRelease()](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmbytearrayrelease).|
 
 **Returns**
@@ -7442,10 +7442,10 @@ Set a DRM engine plugin String property value.
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_Vendor
-* MLMediaDRMProperty_Version
-* MLMediaDRMProperty_Description
-* MLMediaDRMProperty_Algorithms |
+* MLMediaDRMProperty_Vendor.
+* MLMediaDRMProperty_Version.
+* MLMediaDRMProperty_Description.
+* MLMediaDRMProperty_Algorithms. |
 | const char * |property_value|The value of the corresponding property.|
 
 **Returns**
@@ -7485,7 +7485,7 @@ Set a DRM engine plugin byte array property value.
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |media_drm|Handle to the MLMediaDRM. |
 | [MLMediaDRMProperty](/api-ref/api/Modules/group___media_player/group___media_player.md#const-typedef-char-mlmediadrmproperty) |property_name|The property to query. Standard property names are:
 
-* MLMediaDRMProperty_DeviceUniqueID |
+* MLMediaDRMProperty_DeviceUniqueID. |
 | const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) * |property_value|The value of the corresponding property.|
 
 **Returns**
@@ -7715,8 +7715,12 @@ Generate a signature using the specified RSA Key and algorithm.
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Parameter is invalid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|MLMediaDRM RSA Sign operation has been completed successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |||
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
+**Required Permissions**:
+
+  * None 
+
+
 
 
 
@@ -8257,7 +8261,7 @@ MLResult MLMediaExtractorAdvance(
 )
 ```
 
-Advance to the next sample. Returns `false` if no more sample data is available (end of stream). 
+Advance to the next sample. 
 
 **Parameters**
 
@@ -8272,7 +8276,7 @@ Advance to the next sample. Returns `false` if no more sample data is available 
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|If handle is invalid. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|If operation succeeded. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_FailedTransaction|If Advance operation failed.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_FailedTransaction|If Advance operation failed, no more sample data is available (end of stream).|
 **Required Permissions**:
 
   * None 
@@ -11720,16 +11724,17 @@ Gets the handle of the audio stream.
 
 |  |   |   |
 |--|--|--|
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed due to an invalid parameter. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully returned current audio stream handle. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|Failed due to an unknown error. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLMediaGenericResult_NoInit|Failed because MediaPlayer was not properly initialized.|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_NotImplemented|If used in versions starting 1.2.0 or later.|
 **Required Permissions**:
 
   * None 
 
 
 
+
+:::caution Deprecated
+Unsupported since 1.2.0. Scheduled for removal. 
+:::
 
 
 
@@ -15486,10 +15491,10 @@ The associated value is a ByteBuffer containing HDR10+ metadata conforming to th
 
 
 
-* The formats of output buffers of a decoder configured for HDR10+ profiles (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus, MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::HEVCProfileMain10HDR10Plus ), or 
+* The formats of output buffers of a decoder configured for HDR10+ profiles (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus, MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::HEVCProfileMain10HDR10Plus), or 
 
 
-* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or \ref MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus ).
+* The formats of output buffers of an encoder configured for an HDR10+ profiles that uses out-of-band metadata (such as MLMediaCodecListGetSupportedProfileLevels::VP9Profile2HDR10Plus or MLMediaCodecListGetSupportedProfileLevels::VP9Profile3HDR10Plus).
 
 
 

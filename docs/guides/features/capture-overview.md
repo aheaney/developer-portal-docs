@@ -4,7 +4,7 @@ title: System Capture
 sidebar_position: 11
 date: 08/29/2022
 tags: [Features, Capture, Media, Video, Photo, Screenshot, ML Hub, Device Bridge, ADB]
-keywords: [Features, Capture, Media, Video, Photo, Screenshot, ML Hub, Device Bridge, ADB]
+keywords: [Features, Capture, Media, Video, Photo, Screenshot, ML Hub, Device Bridge, Recorder, Record]
 ---
 
 The Capture App allows you to take screenshots and screen recordings on the Magic Leap 2 from any app or platform. Below you'll find instructions on capturing media and accessing it on-device, in the ML Hub.
@@ -21,7 +21,7 @@ You can activate Capture on any Magic Leap 2 app or menu by pressing and holding
 
 The animation below shows the correct button sequence:
 
-![Controller Animation of Capture Button Press Sequence](/img/features/capture-controller.gif)
+<Image url= {require("/img/features/capture-controller.gif")} >Controller Animation of Capture Button Press Sequence</Image>
 
 :::note
 You might have trouble activating Capture if the app you're using currently is accessing the camera stream.

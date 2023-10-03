@@ -31,12 +31,19 @@ title: MLCamera.cs
 
 namespace UnityEngine.XR.MagicLeap
 {
+    using System;
     using System.Threading;
     using System.Threading.Tasks;
     using Native;
 
     public sealed partial class MLCamera : MLCameraBase
     {
+        public event Action OnCameraPaused;
+        
+        public event Action OnCameraResumed;
+        
+        public bool IsPaused { get; private set; }
+        
         private static int instanceCounter = 0;
 
         private MLCamera() : base() => Interlocked.Increment(ref instanceCounter);
@@ -150,7 +157,7 @@ namespace UnityEngine.XR.MagicLeap
         public Task<MLResult> CapturePreviewStartAsync()
         {
             // this has to be called on main thread
-            CreatePreviewTexture();
+            MLThreadDispatch.ScheduleMain(CreatePreviewTexture);
 
             return Task.Run(() =>
             {
@@ -205,7 +212,15 @@ namespace UnityEngine.XR.MagicLeap
         protected override void OnApplicationPause(bool pauseStatus)
         {
             applicationPausePerfMarker.Begin();
-            MLResult.Code result = pauseStatus ? Pause() : Resume();
+            MLResult.Code result = MLResult.Code.Ok;
+            if (pauseStatus)
+            {
+                result = Pause();
+            }
+            else
+            {
+                Resume();
+            }
             applicationPausePerfMarker.End();
             if (result != MLResult.Code.Ok)
             {
@@ -216,6 +231,8 @@ namespace UnityEngine.XR.MagicLeap
 
         private MLResult.Code Pause(bool flagsOnly = false)
         {
+            OnCameraPaused?.Invoke();
+            IsPaused = true;
             MLResult.Code result = MLResult.Code.Ok;
 
             if (cameraConnectionEstablished)
@@ -297,6 +314,8 @@ namespace UnityEngine.XR.MagicLeap
                 }
             }
 
+            IsPaused = false;
+            OnCameraResumed?.Invoke();
             return resultCode;
         }
 

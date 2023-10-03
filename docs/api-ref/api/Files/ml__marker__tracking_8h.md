@@ -74,7 +74,7 @@ title: ml_marker_tracking.h
 | MLMarkerTrackerDetectorType_Aruco |  1 << 1| Aruco and AprilTag. |
 | MLMarkerTrackerDetectorType_EAN_13 |  1 << 2| EAN-13 (experimental). |
 | MLMarkerTrackerDetectorType_UPC_A |  1 << 3| UPC-A (experimental). |
-| MLMarkerTrackerDetectorType_Code_128 |  1 << 4| Code 128 decoded data. (experimental) |
+| MLMarkerTrackerDetectorType_Code_128 |  1 << 4| Code 128 decoded data (experimental). |
 | MLMarkerTrackerDetectorType_All |  0x3FFFFFFF| All supported marker types. |
 | MLMarkerTrackerDetectorType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
@@ -97,12 +97,12 @@ Represents the different detector types supported by the API.
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLMarkerTrackerProfile_Default |  0| Generic tracker profile. Tracker profile that covers standard use cases. If this does not suite the needs of the application try the other profiles listed below. .|
-| MLMarkerTrackerProfile_Custom |  1| Customer Tracker Profile. .Application can define a custom traker profiler. See [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for more details. |
-| MLMarkerTrackerProfile_Speed |  2| Optimized for speed. Use this profile to reduce the compute load and increase detection/tracker speed. This can result poor poses. .|
-| MLMarkerTrackerProfile_Accuracy |  3| Optimized for accuracy. Use this profile to optimize for accurate marker poses. This can cause increased load on the compute. .|
-| MLMarkerTrackerProfile_SmallTargets |  4| Optimized for small targets. Use this profile to optimize for markers that are small or for larger markers that need to detected from far. .|
-| MLMarkerTrackerProfile_Large_FoV |  6| Optimized for FoV. Use this profile to be able to detect markers across a larger FoV. Marker Tracker system will attempt to use multiple cameras to detect the markers. .|
+| MLMarkerTrackerProfile_Default |  0| Generic tracker profile. Tracker profile that covers standard use cases. If this does not suite the needs of the application try the other profiles listed below. |
+| MLMarkerTrackerProfile_Custom |  1| Customer Tracker Profile. Application can define a custom traker profiler. See [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) for more details. |
+| MLMarkerTrackerProfile_Speed |  2| Optimized for speed. Use this profile to reduce the compute load and increase detection/tracker speed. This can result poor poses. |
+| MLMarkerTrackerProfile_Accuracy |  3| Optimized for accuracy. Use this profile to optimize for accurate marker poses. This can cause increased load on the compute. |
+| MLMarkerTrackerProfile_SmallTargets |  4| Optimized for small targets. Use this profile to optimize for markers that are small or for larger markers that need to detected from far. |
+| MLMarkerTrackerProfile_Large_FoV |  6| Optimized for FoV. Use this profile to be able to detect markers across a larger FoV. Marker Tracker system will attempt to use multiple cameras to detect the markers. |
 | MLMarkerTrackerProfile_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -191,7 +191,7 @@ Marker tracker camera hint.
 
 The MLMarkerTrackerCameraHint enum values are used to hint to the camera that should be used. This is set in the [MLMarkerTrackerCustomProfile](/api-ref/api/Modules/group___marker_tracking/struct_m_l_marker_tracker_custom_profile.md) structure and this setting currently only applies to the aruco detectors.
 
-RGB camera has highger resolution than world cameras and are better suited for use cases where the target to be tracked is small or needs to be detected from far.
+RGB camera has higher resolution than world cameras and are better suited for use cases where the target to be tracked is small or needs to be detected from far.
 
 World cameras make use of multiple world cameras to improve accuracy and increase the FoV for detection.
 
@@ -685,7 +685,7 @@ Max time between fully analyzed frames is 1s.
 
 
 **API Level:**
-  * 21
+  * 28
 
 
 
@@ -1128,7 +1128,7 @@ ML_STATIC_INLINE MLResult MLMarkerTrackerSettingsInit(MLMarkerTrackerSettings *i
     return MLResult_InvalidParam;
   }
   memset(inout_settings, 0, sizeof(MLMarkerTrackerSettings));
-  inout_settings->version = 5u;
+  inout_settings->version = 6u;
   inout_settings->dictionary = MLMarkerTrackerArucoDictionaryName_NotInitialized;
   inout_settings->aruco_marker_length = 0.1f;
   inout_settings->qr_code_length = 0.1f;

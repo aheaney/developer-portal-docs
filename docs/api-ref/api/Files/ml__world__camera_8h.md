@@ -11,48 +11,48 @@ title: ml_world_camera.h
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md)** <br></br>A structure to encapsulate the camera settings.  |
-| struct | **[MLWorldCameraIntrinsics](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md)** <br></br>World camera intrinsic parameters.  |
-| struct | **[MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
-| struct | **[MLWorldCameraFrame](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
-| struct | **[MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| struct | **[MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md)** <br></br>A structure to encapsulate the camera settings.  |
+| struct | **[MLWorldCameraIntrinsics](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_intrinsics.md)** <br></br>World camera intrinsic parameters.  |
+| struct | **[MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
+| struct | **[MLWorldCameraFrame](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| struct | **[MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md)** <br></br>A structure to encapsulate output data for each camera sensor.  |
 
 ## Types
 
 |                | Name           |
 | -------------- | -------------- |
-| typedef struct [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) | **[MLWorldCameraSettings](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcamerasettings)** <br></br>A structure to encapsulate the camera settings.  |
-| typedef struct [MLWorldCameraIntrinsics](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md) | **[MLWorldCameraIntrinsics](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcameraintrinsics)** <br></br>World camera intrinsic parameters.  |
-| typedef struct [MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md) | **[MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcameraframebuffer)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
-| typedef struct [MLWorldCameraFrame](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md) | **[MLWorldCameraFrame](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcameraframe)** <br></br>A structure to encapsulate output data for each camera sensor.  |
-| typedef struct [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) | **[MLWorldCameraData](/api-ref/api/Modules/group___camera/group___camera.md#struct-mlworldcameradata)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| typedef struct [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) | **[MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#struct-mlworldcamerasettings)** <br></br>A structure to encapsulate the camera settings.  |
+| typedef struct [MLWorldCameraIntrinsics](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_intrinsics.md) | **[MLWorldCameraIntrinsics](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#struct-mlworldcameraintrinsics)** <br></br>World camera intrinsic parameters.  |
+| typedef struct [MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md) | **[MLWorldCameraFrameBuffer](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#struct-mlworldcameraframebuffer)** <br></br>A structure to encapsulate per plane info for each camera frame.  |
+| typedef struct [MLWorldCameraFrame](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame.md) | **[MLWorldCameraFrame](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#struct-mlworldcameraframe)** <br></br>A structure to encapsulate output data for each camera sensor.  |
+| typedef struct [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) | **[MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#struct-mlworldcameradata)** <br></br>A structure to encapsulate output data for each camera sensor.  |
 
 ## Enums
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 28](/api-ref/api/Modules/group___camera/group___camera.md#enums-anonymous-enum-28)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
-| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_Left](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
+| enum | **[Anonymous Enum 32](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-anonymous-enum-32)** <br></br> { <br></br>[MLWorldCameraIntrinsics_MaxRadialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxradialdistortioncoefficients) = 4,<br></br> [MLWorldCameraIntrinsics_MaxTangentialDistortionCoefficients](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraintrinsics-maxtangentialdistortioncoefficients) = 2<br></br>} |
+| enum | **[MLWorldCameraIdentifier](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameraidentifier)** <br></br> { <br></br>[MLWorldCameraIdentifier_None](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-none) = 0,<br></br> [MLWorldCameraIdentifier_Left](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-left) = 1 << 0,<br></br> [MLWorldCameraIdentifier_Right](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-right) = 1 << 1,<br></br> [MLWorldCameraIdentifier_Center](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-center) = 1 << 2,<br></br> [MLWorldCameraIdentifier_All](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-all) = MLWorldCameraIdentifier_Left |
                                 MLWorldCameraIdentifier_Right |
                                 MLWorldCameraIdentifier_Center,<br></br> [MLWorldCameraIdentifier_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraidentifier-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Camera Identifier.  |
-| enum | **[MLWorldCameraMode](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode)** <br></br> { <br></br>[MLWorldCameraMode_Unknown](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-unknown) = 0,<br></br> [MLWorldCameraMode_LowExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-lowexposure) = 1 << 0,<br></br> [MLWorldCameraMode_NormalExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-normalexposure) = 1 << 1,<br></br> [MLWorldCameraMode_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of world camera modes.  |
-| enum | **[MLWorldCameraFrameType](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameraframetype)** <br></br> { <br></br>[MLWorldCameraFrameType_Unknown](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-unknown) = 0,<br></br> [MLWorldCameraFrameType_LowExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-lowexposure) = 1,<br></br> [MLWorldCameraFrameType_NormalExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-normalexposure) = 2,<br></br> [MLWorldCameraFrameType_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of camera mode used when capturing a frame.  |
+| enum | **[MLWorldCameraMode](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode)** <br></br> { <br></br>[MLWorldCameraMode_Unknown](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-unknown) = 0,<br></br> [MLWorldCameraMode_LowExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-lowexposure) = 1 << 0,<br></br> [MLWorldCameraMode_NormalExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-normalexposure) = 1 << 1,<br></br> [MLWorldCameraMode_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameramode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of world camera modes.  |
+| enum | **[MLWorldCameraFrameType](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameraframetype)** <br></br> { <br></br>[MLWorldCameraFrameType_Unknown](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-unknown) = 0,<br></br> [MLWorldCameraFrameType_LowExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-lowexposure) = 1,<br></br> [MLWorldCameraFrameType_NormalExposure](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-normalexposure) = 2,<br></br> [MLWorldCameraFrameType_Ensure32Bits](/api-ref/api/Files/ml__world__camera_8h.md#enums-mlworldcameraframetype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Enumeration of camera mode used when capturing a frame.  |
 
 ## Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| void | **[MLWorldCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit)**([MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * inout_handle)<br></br>Initialize the camera settings structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect).  |
-| void | **[MLWorldCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcameradatainit)**([MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) * inout_world_camera_data)<br></br>Initialize [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) with version.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect)**(const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Connect to world cameras.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * settings)<br></br>Update the world camera settings.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraGetLatestWorldCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameragetlatestworldcameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint64_t timeout_ms, [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) ** out_data)<br></br>Poll for Frames.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcamerareleasecameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) * world_camera_data)<br></br>Releases specified [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) object.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameradisconnect)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Disconnect from world camera.  |
+| void | **[MLWorldCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#void-mlworldcamerasettingsinit)**([MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) * inout_handle)<br></br>Initialize the camera settings structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect).  |
+| void | **[MLWorldCameraDataInit](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#void-mlworldcameradatainit)**([MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) * inout_world_camera_data)<br></br>Initialize [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) with version.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect)**(const [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) * settings, [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Connect to world cameras.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraUpdateSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraupdatesettings)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) * settings)<br></br>Update the world camera settings.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraGetLatestWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameragetlatestworldcameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, uint64_t timeout_ms, [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) ** out_data)<br></br>Poll for Frames.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraReleaseCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcamerareleasecameradata)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) * world_camera_data)<br></br>Releases specified [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) object.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLWorldCameraDisconnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameradisconnect)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Disconnect from world camera.  |
 
 ## Enums Documentation
 
-### Anonymous Enum 28 {#enums-anonymous-enum-28}
+### Anonymous Enum 32 {#enums-anonymous-enum-32}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -72,6 +72,7 @@ title: ml_world_camera.h
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
+| MLWorldCameraIdentifier_None |  0| None. |
 | MLWorldCameraIdentifier_Left |  1 << 0| Left World camera. |
 | MLWorldCameraIdentifier_Right |  1 << 1| Right World camera. |
 | MLWorldCameraIdentifier_Center |  1 << 2| Center World camera. |
@@ -97,8 +98,8 @@ Enumeration of all the available world camera sensors.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLWorldCameraMode_Unknown |  0| None. |
-| MLWorldCameraMode_LowExposure |  1 << 0| Low exposure mode. .This mode is currently only available when the controller is being tracked. |
-| MLWorldCameraMode_NormalExposure |  1 << 1| Normal exposure mode. .|
+| MLWorldCameraMode_LowExposure |  1 << 0| Low exposure mode. This mode is currently only available when the controller is being tracked. |
+| MLWorldCameraMode_NormalExposure |  1 << 1| Normal exposure mode. |
 | MLWorldCameraMode_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -116,8 +117,8 @@ Enumeration of world camera modes.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLWorldCameraFrameType_Unknown |  0| None. |
-| MLWorldCameraFrameType_LowExposure |  1| Frame captured using [MLWorldCameraMode_LowExposure](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-lowexposure) mode. .|
-| MLWorldCameraFrameType_NormalExposure |  2| Frame captured using [MLWorldCameraMode_NormalExposure](/api-ref/api/Modules/group___camera/group___camera.md#enums-mlworldcameramode-normalexposure) mode. .|
+| MLWorldCameraFrameType_LowExposure |  1| Frame captured using [MLWorldCameraMode_LowExposure](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode-lowexposure) mode. |
+| MLWorldCameraFrameType_NormalExposure |  2| Frame captured using [MLWorldCameraMode_NormalExposure](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#enums-mlworldcameramode-normalexposure) mode. |
 | MLWorldCameraFrameType_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -141,11 +142,11 @@ typedef struct MLWorldCameraSettings MLWorldCameraSettings;
 
 A structure to encapsulate the camera settings. 
 
-This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit) before use.
+This structure must be initialized by calling [MLWorldCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#void-mlworldcamerasettingsinit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md)
 
 
 **API Level:**
@@ -166,7 +167,7 @@ World camera intrinsic parameters.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_intrinsics.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_intrinsics.md)
 
 
 **API Level:**
@@ -187,7 +188,7 @@ A structure to encapsulate per plane info for each camera frame.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame_buffer.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame_buffer.md)
 
 
 **API Level:**
@@ -208,7 +209,7 @@ A structure to encapsulate output data for each camera sensor.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_frame.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_frame.md)
 
 
 **API Level:**
@@ -227,11 +228,11 @@ typedef struct MLWorldCameraData MLWorldCameraData;
 
 A structure to encapsulate output data for each camera sensor. 
 
-This structure must be initialized by calling [MLWorldCameraDataInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcameradatainit) before use.
+This structure must be initialized by calling [MLWorldCameraDataInit](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#void-mlworldcameradatainit) before use.
 
 
 
-[More Info](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md)
+[More Info](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md)
 
 
 **API Level:**
@@ -253,13 +254,13 @@ static inline void MLWorldCameraSettingsInit(
 )
 ```
 
-Initialize the camera settings structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). 
+Initialize the camera settings structure. Shall be called before calling [MLWorldCameraConnect()](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect). 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * |inout_handle|[MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) structure to initialize.|
+| [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) * |inout_handle|[MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) structure to initialize.|
 **Required Permissions**:
 
   * None 
@@ -284,13 +285,13 @@ static inline void MLWorldCameraDataInit(
 )
 ```
 
-Initialize [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) with version. 
+Initialize [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) with version. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) * |inout_world_camera_data|Set up the version for inout_world_camera_data. |
+| [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) * |inout_world_camera_data|Set up the version for inout_world_camera_data. |
 
 
 
@@ -317,7 +318,7 @@ Connect to world cameras.
 
 |  |   |   |
 |--|--|--|
-| const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * |settings|A pointer to [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) structure. |
+| const [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) * |settings|A pointer to [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) structure. |
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * |out_handle|A pointer to camera handle to be used in later APIs.|
 
 **Returns**
@@ -325,7 +326,6 @@ Connect to world cameras.
 |  |   |   |
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|One of the parameters is invalid. |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_LicenseError|Necessary license is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Connected to camera device(s) successfully. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_PermissionDenied|Necessary permission is missing. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
@@ -360,8 +360,8 @@ Update the world camera settings.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). |
-| const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) * |settings|Pointer to [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect). |
+| const [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) * |settings|Pointer to [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md).|
 
 **Returns**
 
@@ -402,9 +402,9 @@ Poll for Frames.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). |
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect). |
 | uint64_t |timeout_ms|Timeout in milliseconds. |
-| [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) ** |out_data|World camera data. Will be set to NULL if no valid data is available at this time.|
+| [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) ** |out_data|World camera data. Will be set to NULL if no valid data is available at this time.|
 
 **Returns**
 
@@ -419,7 +419,7 @@ Poll for Frames.
   * None 
 
 
-Returns [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling [MLWorldCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcamerareleasecameradata).
+Returns [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) with this latest data when available. The memory is owned by the system. Application should copy the data it needs to cache and release the memory by calling [MLWorldCameraReleaseCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcamerareleasecameradata).
 
 This is a blocking call. API is not thread safe.
 
@@ -445,14 +445,14 @@ MLResult MLWorldCameraReleaseCameraData(
 )
 ```
 
-Releases specified [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) object. 
+Releases specified [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) object. 
 
 **Parameters**
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect). |
-| [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) * |world_camera_data|Pointer to a valid [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) object.|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect). |
+| [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) * |world_camera_data|Pointer to a valid [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) object.|
 
 **Returns**
 
@@ -488,7 +488,7 @@ Disconnect from world camera.
 
 |  |   |   |
 |--|--|--|
-| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect).|
+| [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Camera handle obtained from [MLWorldCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect).|
 
 **Returns**
 
@@ -548,6 +548,7 @@ enum {
 };
 
 typedef enum MLWorldCameraIdentifier{
+  MLWorldCameraIdentifier_None = 0,
   MLWorldCameraIdentifier_Left = 1 << 0,
   MLWorldCameraIdentifier_Right = 1 << 1,
   MLWorldCameraIdentifier_Center = 1 << 2,

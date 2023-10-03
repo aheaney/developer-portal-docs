@@ -1,5 +1,5 @@
 ---
-title: MLCamera Walkthrough
+title: API Overview
 sidebar_position: 0
 date: 10/09/2022
 tags: [Unity, Overview, Camera]
@@ -53,7 +53,7 @@ Once the camera is available, you need to locate the preferred camera device and
 During initialization, you can specify if the connected camera will record Real World, Virtual, or Mixed Reality content by setting the `MLCamera.ConnectContext.Flags` parameter.
 
 :::info
-To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/media/ml-camera.md).
+To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/ml-camera.md).
 :::
 
 The example below tries to establish a connection with the camera stream.
@@ -94,7 +94,7 @@ The example below tries to establish a connection with the camera stream.
 Before you can capture the Magic Leap Camera's input, you need to create `CaptureConfig`. A `CaptureConfig` includes information about the final output such as, output format, frame-rate, and which camera stream to use.
 
 :::info
-To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/media/ml-camera.md).
+To learn more about the different camera devices see the [Camera Overview Guide](/docs/guides/features/ml-camera.md).
 :::
 
 The example below demonstrates how to configure a camera to capture an RGBA video from the main camera. The type of capture is set by the `MLCamera.StreamCapabilitiesInfo` parameter.
@@ -108,7 +108,6 @@ Use FrameRate_None when configuring only Image capture.
   
 ```csharp
 ...
-
   [SerializeField, Tooltip("Desired width for the camera capture")]
   private int captureWidth = 1280;
   [SerializeField, Tooltip("Desired height for the camera capture")]
@@ -149,8 +148,7 @@ Use FrameRate_None when configuring only Image capture.
             defaultCapability, outputFormat
         );
         //StartVideoCapture();
-    }
-...
+}
 ```
 
 ## Start Video Capture
@@ -164,7 +162,9 @@ This section shows how to prepare and start video capture using the `_captureCon
   MLCamera _camera;
   //The camera capture state
   bool _isCapturing;
+
 ...
+
 //Assumes that the capture configure was created with a Video CaptureType
  private void StartVideoCapture()
  {
@@ -194,7 +194,6 @@ This section shows how to prepare and start video capture using the `_captureCon
 To stop video capture simply call `CaptureVideoStop()` on the target MLCamera. Note that developers should track if the camera capture was started before trying to call the stop function.
 
 ```csharp
-
   //The camera capture state
   bool _isCapturing;
 
@@ -215,7 +214,9 @@ The captured video frames are provided thorough the `OnRawVideoFrameAvailable` c
 ```csharp
   //Cached version of the MLCamera instance.
   private MLCamera _camera;
+
 ...
+
   //Assumes that the capture configure was created with a Video CaptureType
   private void SetCameraCallbacks()
   {
@@ -243,7 +244,7 @@ This section demonstrates how to render the RGBA image provided by the Magic Lea
   private Texture2D videoTextureRGB;
 ...
 
-  void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras)
+  void RawVideoFrameAvailable(MLCamera.CameraOutput output, MLCamera.ResultExtras extras, MLCamera.Metadata metadataHandle)
   {
     if (output.Format == MLCamera.OutputFormat.RGBA_8888)
     {

@@ -31,6 +31,7 @@ namespace UnityEngine.XR.MagicLeap
 {
     using System;
     using System.Runtime.InteropServices;
+    using UnityEngine.XR.MagicLeap.Native;
 
     public static partial class InputSubsystem
     {
@@ -50,7 +51,7 @@ namespace UnityEngine.XR.MagicLeap
                     MagicLeapXrProviderNativeBindings.StopEyeTracking();
                 }
 
-                public static bool TryGetState(InputDevice eyesDevice, out State state) => NativeBindings.TryGetState(eyesDevice, out state);
+                public static bool TryGetState(InputDevice eyesDevice, out State state) => NativeBindings.TryGetTrackingState(eyesDevice, out state);
 
                 public readonly struct State
                 {
@@ -67,6 +68,10 @@ namespace UnityEngine.XR.MagicLeap
                     public readonly bool Error;
 
                     public readonly MLTime Timestamp;
+                    
+                    public readonly float LeftEyeOpenness;
+
+                    public readonly float RightEyeOpenness;
 
                     internal State(NativeBindings.MLEyeTrackingStateEx nativeState)
                     {
@@ -77,43 +82,145 @@ namespace UnityEngine.XR.MagicLeap
                         this.RightBlink = nativeState.RightBlink;
                         this.Error = nativeState.Error == 1;
                         this.Timestamp = nativeState.Timestamp;
+                        this.LeftEyeOpenness = nativeState.LeftEyeOpenness;
+                        this.RightEyeOpenness = nativeState.RightEyeOpenness;
                     }
+                }
+
+                public struct StaticData 
+                {
+                    public MagicLeapNativeBindings.MLCoordinateFrameUID Vergence;
+
+                    public MagicLeapNativeBindings.MLCoordinateFrameUID LeftCenter;
+
+                    public MagicLeapNativeBindings.MLCoordinateFrameUID RightCenter;
+                }
+
+                public struct DeviceCenteredEyeData
+                {
+                    public Pose LeftEye;
+
+                    public Pose RightEye;
+                      
+                    public Pose Vergence;
+                }
+
+                public static void GetStaticData(out StaticData staticData)
+                {
+                    staticData = new();
+                    var eyeHandle = MagicLeapXrProviderNativeBindings.GetEyeTrackerHandle();
+                    if (!MagicLeapNativeBindings.MLHandleIsValid(eyeHandle))
+                    {
+                        Debug.LogError("Eye handle invalid");
+                        return;
+                    }
+
+                    NativeBindings.MLEyeTrackingStaticData data = new();
+                    var result = MLResult.Create(NativeBindings.MLEyeTrackingGetStaticData(eyeHandle, ref data));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"GetStaticData failed: {result}");
+                        return;
+                    }
+
+                    staticData.Vergence = data.vergence;
+                    staticData.LeftCenter = data.left_center;
+                    staticData.RightCenter = data.right_center;
+                    return;
+                }
+
+                public static void GetEyeDataInDeviceCoords(out DeviceCenteredEyeData deviceCenteredEyeData)
+                {
+                    deviceCenteredEyeData = new();
+                    MagicLeapNativeBindings.MLSnapshotStaticData snapshotStaticData = MagicLeapNativeBindings.MLSnapshotStaticData.Init();
+                    IntPtr snap = IntPtr.Zero;
+
+                    MLResult result;
+                    result = MLResult.Create(MagicLeapNativeBindings.MLSnapshotGetStaticData(ref snapshotStaticData));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"MLEyes::MLSnapshotGetStaticData failed: {result}");
+                        return;
+                    }
+
+                    result = MLResult.Create(MagicLeapNativeBindings.MLPerceptionGetSnapshot(ref snap));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"MLEyes::MLPerceptionGetSnapshot failed: {result}");
+                        return;
+                    }
+
+                    MagicLeapNativeBindings.MLPose leftEyeCenter = new();
+                    MagicLeapNativeBindings.MLPose rightEyeCenter = new();
+                    MagicLeapNativeBindings.MLTransform head = new();
+                    MagicLeapNativeBindings.MLTransform vergence = new();
+
+                    MLHeadTracking.GetStaticData(out MagicLeapNativeBindings.MLCoordinateFrameUID headUID);
+
+                    result = MLResult.Create(MagicLeapNativeBindings.MLSnapshotGetTransform(snap, ref headUID, ref head));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"MLEyes::MLSnapshotGetTransform (Device UID) failed: {result}");
+                        return;
+                    }
+
+                    StaticData eyeStaticData;
+                    GetStaticData(out eyeStaticData);
+
+                    result = MLResult.Create(MagicLeapNativeBindings.MLSnapshotGetTransform(snap, ref eyeStaticData.Vergence, ref vergence));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"MLEyes::MLSnapshotGetTransform (vergence UID) failed: {result}");
+                        return;
+                    }
+
+                    result = MLResult.Create(MagicLeapNativeBindings.MLSnapshotGetPoseInBase(snap, ref headUID, ref eyeStaticData.LeftCenter, ref leftEyeCenter));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"MLEyes::MLSnapshotGetPoseInBase(leftEye) failed: {result}");
+                        return;
+                    }
+
+                    result = MLResult.Create(MagicLeapNativeBindings.MLSnapshotGetPoseInBase(snap, ref headUID, ref eyeStaticData.RightCenter, ref rightEyeCenter));
+                    if (!result.IsOk)
+                    {
+                        Debug.LogError($"MLEyes::MLSnapshotGetPoseInBase(rightEye) failed: {result}");
+                        return;
+                    }
+
+                    deviceCenteredEyeData.LeftEye = new Pose(MLConvert.ToUnity(leftEyeCenter.Transform.Position), MLConvert.ToUnity(leftEyeCenter.Transform.Rotation));
+                    deviceCenteredEyeData.RightEye = new Pose(MLConvert.ToUnity(rightEyeCenter.Transform.Position), MLConvert.ToUnity(rightEyeCenter.Transform.Rotation));
+                    deviceCenteredEyeData.Vergence = new Pose(MLConvert.ToUnity(vergence.Position), MLConvert.ToUnity(vergence.Rotation));
+
+                    MagicLeapNativeBindings.MLPerceptionReleaseSnapshot(snap);
                 }
 
                 internal static class NativeBindings
                 {
                     private static byte[] allocatedStateData = new byte[Marshal.SizeOf<NativeBindings.MLEyeTrackingStateEx>()];
 
-                    public static bool TryGetState(InputDevice eyesDevice, out State state)
+                    public static bool TryGetTrackingState(InputDevice eyesDevice, out State state)
                     {
                         if (!eyesDevice.TryGetFeatureValue(InputSubsystem.Extensions.DeviceFeatureUsages.Eyes.TrackingState, allocatedStateData))
-                            goto Failure;
-
-                        try
                         {
-                            IntPtr ptr = Marshal.AllocHGlobal(allocatedStateData.Length);
-                            Marshal.Copy(allocatedStateData, 0, ptr, allocatedStateData.Length);
-                            var nativeState = Marshal.PtrToStructure<NativeBindings.MLEyeTrackingStateEx>(ptr);
-                            Marshal.FreeHGlobal(ptr);
-                            state = new State(nativeState);
-                            return true;
+                            state = default;
+                            return false;
                         }
 
-                        catch (Exception e)
-                        {
-                            Debug.LogError("TryGetTrackingState failed with the exception: " + e);
-                            goto Failure;
-                        }
-
-                    Failure:
-                        state = default;
-                        return false;
-
+                        IntPtr ptr = Marshal.AllocHGlobal(allocatedStateData.Length);
+                        Marshal.Copy(allocatedStateData, 0, ptr, allocatedStateData.Length);
+                        var nativeState = Marshal.PtrToStructure<NativeBindings.MLEyeTrackingStateEx>(ptr);
+                        Marshal.FreeHGlobal(ptr);
+                        state = new State(nativeState);
+                        return true;
                     }
+                    
                     [StructLayout(LayoutKind.Sequential)]
                     public readonly struct MLEyeTrackingStateEx
                     {
-                        private readonly uint Version;
+                        public static MLEyeTrackingStateEx Init() => new (version: 2);
+                        
+                        public readonly uint Version;
 
                         public readonly float VergenceConfidence;
 
@@ -130,12 +237,43 @@ namespace UnityEngine.XR.MagicLeap
                         public readonly uint Error;
 
                         public readonly long Timestamp;
+
+                        public readonly float LeftEyeOpenness;
+
+                        public readonly float RightEyeOpenness;
+
+                        private MLEyeTrackingStateEx(uint version)
+                        {
+                            Version = version;
+                            #region state defaults
+                            VergenceConfidence = 0;
+                            LeftCenterConfidence = 0;
+                            RightCenterConfidence = 0;
+                            LeftBlink = false;
+                            RightBlink = false;
+                            Error = 0;
+                            Timestamp = 0;
+                            LeftEyeOpenness = 0;
+                            RightEyeOpenness = 0;
+                            #endregion
+                        }
+                    }
+
+                    [DllImport(MagicLeapNativeBindings.MLPerceptionClientDll, CallingConvention = CallingConvention.Cdecl)]
+                    public static extern MLResult.Code MLEyeTrackingGetStaticData(ulong handle, ref MLEyeTrackingStaticData outData);
+
+                    [StructLayout(LayoutKind.Sequential)]
+                    public struct MLEyeTrackingStaticData
+                    {
+                        public MagicLeapNativeBindings.MLCoordinateFrameUID vergence;
+
+                        public MagicLeapNativeBindings.MLCoordinateFrameUID left_center;
+
+                        public MagicLeapNativeBindings.MLCoordinateFrameUID right_center;
                     }
                 }
             }
-
         }
-
     }
 }
 ```

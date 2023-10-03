@@ -2,7 +2,7 @@
 id: arcloud-deployment-ova
 title: AR Cloud OVA Image Deployment
 sidebar_label: OVA Deployment
-sidebar_position: 4
+sidebar_position: 5
 date: 02/07/2023
 tags: [ARCloud, Cloud, OVA]
 keywords: [ARCloud, Cloud, OVA]
@@ -16,6 +16,7 @@ import VirtualBoxImport from './_virtual_box_import.md';
 import VirtualBoxLimitations from './_virtual_box_limitations.md';
 import FindIPAddress from './_find_ip.md';
 import DeploymentVerification from './_deployment_verification.md';
+import RegisterDevice from './_register_device.md';
 
 The provided image contains all the necessary infrastructure and services pre-configured to be able to manage and work
 with the Magic Leap devices. This allows to set up a Virtual Machine (VM) quickly and access the services without a
@@ -35,19 +36,19 @@ deployments in production environments! Instead, it is a means of quickly testin
 
 ## Download
 
-The images are available on the [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads).
+The images are available on the [Magic Leap 2 Developer Portal](https://ml2-developer.magicleap.com/downloads#ar-cloud-ova).
 
-Download the latest version of an image for the [runtime environment](#runtime-environments) of your choice.
-The OVA image supports the majority of the environments, except for MacBooks with Apple Silicon chipsets, in which case
-the UTM image should be used.
-
-:::caution
+:::caution Authentication and SLA
 You must be logged in to the Developer Portal for these links to appear. You can log in by clicking the "person" icon in
-the upper-right hand side of the window at the link above.
+the upper-right corner of the window at the link above.
 
 To download an image the approval of the
 [Software License Agreement](https://www.magicleap.com/software-license-agreement-ml2) is required.
 :::
+
+Download the latest version of an image for the [runtime environment](#runtime-environments) of your choice.
+The OVA image supports the majority of the environments, except for MacBooks with Apple Silicon chipsets, in which case
+the UTM image should be used.
 
 ## Requirements
 
@@ -303,6 +304,8 @@ the virtual machine image to the supported cloud providers described below.
 <Tabs groupId="cloud-providers" queryString>
   <TabItem value="gcp" label="GCP" default>
 
+Make sure you have the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) installed.
+
 Check the [GCP documentation][gcp-image-import] or follow the steps below:
 
 1. Prepare details about your [GCP project][gcp-identifying-projects] and user account:
@@ -409,6 +412,8 @@ variables.
   </TabItem>
   <TabItem value="aws" label="AWS">
 
+Make sure you have the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) installed.
+
 Check the [AWS documentation][aws-image-import] or follow the steps below:
 
 1. Prepare details about your [AWS account][aws-find-account-id]:
@@ -430,6 +435,11 @@ Check the [AWS documentation][aws-image-import] or follow the steps below:
    export AWS_BUCKET_REGION=us-east-1
    aws s3api create-bucket --bucket $AWS_BUCKET_NAME --region $AWS_BUCKET_REGION --acl private
    ```
+
+   :::note Bucket Region
+   When importing an OVA image the S3 bucket has to be in the same region as the AWS AMI image that is created. Adjust
+   the bucket region to the one where the EC2 instance should be running.
+   :::
 
 1. Grant the [required permissions][aws-import-reqs]:
 
@@ -500,6 +510,11 @@ Check the [AWS documentation][aws-image-import] or follow the steps below:
           --policy-document "file://vmimport-role-policy.json"
       ```
 
+      :::note Multiple Buckets
+      The role policy above will overwrite any previously attached ones. If you would like to import OVA images in
+      multiple regions, create separate buckets for each region and include them in the `Resource` list above.
+      :::
+
 1. Upload the OVA image to the S3 bucket:
 
    ```shell showLineNumbers
@@ -541,13 +556,27 @@ Check the [AWS documentation][aws-image-import] or follow the steps below:
    export AWS_IMAGE_ID=ami-0abcdef1234567890
    ```
 
-1. Run an EC2 instance using the imported image:
+1. Generate an updated block device mappings file based on the imported image and modify it to use a
+   [Provisioned IOPS SSD volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/provisioned-iops.html):
+
+   ```shell showLineNumbers
+   aws ec2 describe-images --image-ids $AWS_IMAGE_ID --query 'Images[0].BlockDeviceMappings' > block-device-mappings.json
+   sed -ri 's/^(\s+)("VolumeType": )"(.+)"/\1\2"io2",\n\1"Iops": 2000/' block-device-mappings.json
+   ```
+
+   :::note GNU sed
+   The above command requires GNU sed to be installed on your system.
+   :::
+
+1. Run an EC2 instance using the imported image and the custom volume configuration file:
 
    ```shell showLineNumbers
    aws ec2 run-instances \
        --image-id $AWS_IMAGE_ID \
-       --instance-type c5.2xlarge \
-       --associate-public-ip-address
+       --instance-type c5d.2xlarge \
+       --associate-public-ip-address \
+       --ebs-optimized \
+       --block-device-mappings file://block-device-mappings.json
    ```
 
 1. Make sure the necessary [firewall](#firewall) rules are configured.
@@ -564,19 +593,17 @@ variables.
 
 ## Credentials
 
-The virtual machine includes a dedicated `arcloud` user with a password set to `changeme`.
-
-:::caution Changing Your Password
-After initial login, it is encouraged to set a new password using:
-
-```shell
-passwd
-```
-:::
+The virtual machine includes a dedicated `arcloud` user with a password set to `changeme`. The password is set to expire
+and needs to be changed during the first login.
 
 :::warning Key-based Authentication
 Password access should be disabled entirely for all publicly accessible deployments (e.g. on GCP or AWS).
-Key-based authentication can be used instead.
+Key-based authentication should be used instead.
+
+To do this, create keys for your user accounts and modify `/etc/ssh/sshd_config` to include:
+```ini
+PasswordAuthentication no
+```
 :::
 
 ## Accessing the Running Virtual Machine
@@ -695,6 +722,7 @@ This is the recommended approach for all publicly accessible deployments (e.g. o
 
 <DeploymentVerification />
 
+<RegisterDevice />
 
 ## Display Cluster Information
 

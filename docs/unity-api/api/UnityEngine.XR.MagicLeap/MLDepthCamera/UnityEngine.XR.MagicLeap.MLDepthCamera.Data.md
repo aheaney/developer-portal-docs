@@ -134,7 +134,7 @@ public MLTime FrameTimestamp { get; set; }
 
 | Type | Description  | 
 |--|--|
-| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time.  |
+| [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) | Represents an ML API wide timestamp in nanoseconds that is not guaranteed to be synced with any system time. If [OpenXR](/unity-api/api/UnityEngine.XR.OpenXR/UnityEngine.XR.OpenXR.md) is used, [MLTime](/unity-api/api/UnityEngine.XR.MagicLeap/MLTime/UnityEngine.XR.MagicLeap.MLTime.md) is synonymous with the XrTime type.  |
 
 
 
@@ -192,6 +192,26 @@ public Vector3 Position { get; set; }
 
 ```
 
+
+
+
+
+
+-----------
+
+### RawDepthImage {#framebuffer-rawdepthimage}
+
+This is the raw depth camera sensor data captured with the depth camera illumination and corresponds to the amount of total light incident on the sensor. 
+
+```csharp
+
+public FrameBuffer RawDepthImage { get; set; }
+
+```
+
+| Type | Description  | 
+|--|--|
+| [FrameBuffer](/unity-api/api/UnityEngine.XR.MagicLeap/MLDepthCamera/UnityEngine.XR.MagicLeap.MLDepthCamera.FrameBuffer.md) | Per-plane info for each depth camera frame.  |
 
 
 

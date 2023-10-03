@@ -49,9 +49,9 @@ APIs for the Input system.  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
-| enum | **[Anonymous Enum 12](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-12)** <br></br> { <br></br>[MLResultAPIPrefix_Input](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-input) = ( 0x21DC  << 16)<br></br>} |
+| enum | **[Anonymous Enum 13](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-13)** <br></br> { <br></br>[MLResultAPIPrefix_Input](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-input) = ( 0x21DC  << 16)<br></br>} |
 | enum | **[MLInputResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult)** <br></br> { <br></br>[MLInputResult_ServiceNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-servicenotavailable) = MLResultAPIPrefix_Input,<br></br> [MLInputResult_PermissionDenied](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-permissiondenied),<br></br> [MLInputResult_DeviceNotFound](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-devicenotfound),<br></br> [MLInputResult_IllegalState](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-illegalstate),<br></br> [MLInputResult_InternalError](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-internalerror),<br></br> [MLInputResult_SpeechDisabled](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-speechdisabled),<br></br> [MLInputResult_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Input API calls.  |
-| enum | **[Anonymous Enum 13](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-13)** <br></br> { <br></br>[MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers) = 1,<br></br> [MLInput_MaxControllerTouchpadTouches](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollertouchpadtouches) = 2<br></br>} |
+| enum | **[Anonymous Enum 14](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-14)** <br></br> { <br></br>[MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers) = 1,<br></br> [MLInput_MaxControllerTouchpadTouches](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollertouchpadtouches) = 2<br></br>} |
 | enum | **[MLInputControllerTouchpadGestureState](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate)** <br></br> { <br></br>[MLInputControllerTouchpadGestureState_End](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-end),<br></br> [MLInputControllerTouchpadGestureState_Continue](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-continue),<br></br> [MLInputControllerTouchpadGestureState_Start](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-start),<br></br> [MLInputControllerTouchpadGestureState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturestate-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[MLInputControllerTouchpadGestureType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype)** <br></br> { <br></br>[MLInputControllerTouchpadGestureType_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-none),<br></br> [MLInputControllerTouchpadGestureType_Tap](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-tap),<br></br> [MLInputControllerTouchpadGestureType_ForceTapDown](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcetapdown),<br></br> [MLInputControllerTouchpadGestureType_ForceTapUp](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcetapup),<br></br> [MLInputControllerTouchpadGestureType_ForceDwell](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-forcedwell),<br></br> [MLInputControllerTouchpadGestureType_SecondForceDown](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-secondforcedown),<br></br> [MLInputControllerTouchpadGestureType_RadialScroll](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-radialscroll),<br></br> [MLInputControllerTouchpadGestureType_Swipe](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-swipe),<br></br> [MLInputControllerTouchpadGestureType_Count](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-count),<br></br> [MLInputControllerTouchpadGestureType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturetype-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[MLInputControllerTouchpadGestureDirection](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection)** <br></br> { <br></br>[MLInputControllerTouchpadGestureDirection_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-none),<br></br> [MLInputControllerTouchpadGestureDirection_Up](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-up),<br></br> [MLInputControllerTouchpadGestureDirection_Down](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-down),<br></br> [MLInputControllerTouchpadGestureDirection_Left](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-left),<br></br> [MLInputControllerTouchpadGestureDirection_Right](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-right),<br></br> [MLInputControllerTouchpadGestureDirection_Clockwise](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-clockwise),<br></br> [MLInputControllerTouchpadGestureDirection_CounterClockwise](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-counterclockwise),<br></br> [MLInputControllerTouchpadGestureDirection_Count](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-count),<br></br> [MLInputControllerTouchpadGestureDirection_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollertouchpadgesturedirection-ensure32bits) = 0x7FFFFFFF<br></br>} |
@@ -61,9 +61,9 @@ APIs for the Input system.  [More...](#detailed-description)
 | enum | **[MLInputPreDefinedPatternType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype)** <br></br> { <br></br>[MLInputPreDefinedPatternType_A](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-a) = 0,<br></br> [MLInputPreDefinedPatternType_B](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-b) = 1,<br></br> [MLInputPreDefinedPatternType_C](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-c) = 2,<br></br> [MLInputPreDefinedPatternType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputpredefinedpatterntype-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[MLInputCustomHapticsType](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype)** <br></br> { <br></br>[MLInputCustomHapticsType_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-none) = 0,<br></br> [MLInputCustomHapticsType_Buzz](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-buzz) = 1,<br></br> [MLInputCustomHapticsType_Predefined](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-predefined) = 2,<br></br> [MLInputCustomHapticsType_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcustomhapticstype-ensure32bits) = 0x7FFFFFFF<br></br>} |
 | enum | **[MLInputControllerHand](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand)** <br></br> { <br></br>[MLInputControllerHand_None](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-none) = 0,<br></br> [MLInputControllerHand_Left](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-left) = 1,<br></br> [MLInputControllerHand_Right](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-right) = 2,<br></br> [MLInputControllerHand_Both](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-both) = 3,<br></br> [MLInputControllerHand_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlinputcontrollerhand-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Hand in which the controller is held.  |
-| enum | **[Anonymous Enum 26](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-26)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
+| enum | **[Anonymous Enum 30](/api-ref/api/Modules/group___input/group___input.md#enums-anonymous-enum-30)** <br></br> { <br></br>[MLResultAPIPrefix_Voice](/api-ref/api/Modules/group___input/group___input.md#enums-mlresultapiprefix-voice) = ( 0xbe7a  << 16)<br></br>} |
 | enum | **[MLVoiceResult](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult)** <br></br> { <br></br>[MLVoiceResult_IntentDisabled](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-intentdisabled) = MLResultAPIPrefix_Voice,<br></br> [MLVoiceResult_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceresult-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Return values for Voice API calls.  |
-| enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
+| enum | **[MLVoiceState](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate)** <br></br> { <br></br>[MLVoiceState_IntentHotwordDetected](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intenthotworddetected) = 0,<br></br> [MLVoiceState_IntentSessionEnded](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionended) = 1,<br></br> [MLVoiceState_IntentSessionEndedAborted](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedaborted) = 2,<br></br> [MLVoiceState_IntentSessionEndedNoIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendednointent) = 3,<br></br> [MLVoiceState_IntentSessionEndedTimeout](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendedtimeout) = 4,<br></br> [MLVoiceState_IntentSessionEndedError](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentsessionendederror) = 5,<br></br> [MLVoiceState_IntentReady](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentready) = 6,<br></br> [MLVoiceState_IntentNotAvailable](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentnotavailable) = 7,<br></br> [MLVoiceState_IntentInvalidAppIntent](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-intentinvalidappintent) = 8,<br></br> [MLVoiceState_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoicestate-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Voice state in voice event.  |
 | enum | **[MLVoiceIntentNoIntentReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason)** <br></br> { <br></br>[MLVoiceIntentNoIntentReason_NoReason](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-noreason) = 0,<br></br> [MLVoiceIntentNoIntentReason_Silence](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-silence) = 1,<br></br> [MLVoiceIntentNoIntentReason_NoMatch](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-nomatch) = 2,<br></br> [MLVoiceIntentNoIntentReason_Ensure32Bits](/api-ref/api/Modules/group___input/group___input.md#enums-mlvoiceintentnointentreason-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>No intent reason code in voice event.  |
 
 ## Functions
@@ -79,7 +79,7 @@ APIs for the Input system.  [More...](#detailed-description)
 | const char * | **[MLInputGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlinputgetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLInputsResult and MLResult codes.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputCreate](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputcreate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) * out_handle)<br></br>Creates an input tracker.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputSetControllerCallbacksEx](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputsetcontrollercallbacksex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, const [MLInputControllerCallbacksEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_callbacks_ex.md) * controller_callbacks, void * user_data)<br></br>Sets the callbacks for controller input events.  |
-| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetControllerStateEx](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstateex)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputControllerStateEx](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state_ex.md) out_state[MLInput_MaxControllers])<br></br>Returns current state of all possible input controllers.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * inout_devices)<br></br>Gets the device IDs of all connected devices.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLInputReleaseConnectedDevicesList](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputreleaseconnecteddeviceslist)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) * devices)<br></br>Releases the contents of [MLInputConnectedDevicesList](/api-ref/api/Modules/group___input/struct_m_l_input_connected_devices_list.md) populated by [MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetconnecteddevices).  |
@@ -99,6 +99,7 @@ APIs for the Input system.  [More...](#detailed-description)
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStartProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstartprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Starts voice intent processing.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentStopProcessing](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentstopprocessing)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle)<br></br>Stops voice intent processing.  |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) | **[MLVoiceIntentIsEnabled](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentisenabled)**([MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) handle, bool * out_is_enabled)<br></br>Checks voice intent feature is enabled in the system.  |
+| const char * | **[MLVoiceGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlvoicegetresultstring)**([MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) result)<br></br>Returns an ASCII string for MLVoiceResult and MLResult codes.  |
 
 ## Detailed Description
 
@@ -121,7 +122,7 @@ APIs for the voice service system.
 -----------
 ## Enums Documentation
 
-### Anonymous Enum 12 {#enums-anonymous-enum-12}
+### Anonymous Enum 13 {#enums-anonymous-enum-13}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -141,7 +142,7 @@ APIs for the voice service system.
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
 | MLInputResult_ServiceNotAvailable |  MLResultAPIPrefix_Input| |
-| MLInputResult_PermissionDenied | | Operation failed because a required permission has not been granted. Example: This can happen when the app is not in the foreground. .|
+| MLInputResult_PermissionDenied | | Operation failed because a required permission has not been granted. Example: This can happen when the app is not in the foreground. |
 | MLInputResult_DeviceNotFound | | Operation failed because a required device was not found. |
 | MLInputResult_IllegalState | | Operation failed because the service was in an illegal state. Example: This can occur when the service is still initializing. |
 | MLInputResult_InternalError | | Operation failed because of an internal error. |
@@ -158,7 +159,7 @@ Return values for Input API calls.
 
 -----------
 
-### Anonymous Enum 13 {#enums-anonymous-enum-13}
+### Anonymous Enum 14 {#enums-anonymous-enum-14}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -371,7 +372,7 @@ Hand in which the controller is held.
 
 -----------
 
-### Anonymous Enum 26 {#enums-anonymous-enum-26}
+### Anonymous Enum 30 {#enums-anonymous-enum-30}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -420,6 +421,7 @@ Return values for Voice API calls.
 | MLVoiceState_IntentSessionEndedError |  5| ASR session is stopped due to error. |
 | MLVoiceState_IntentReady |  6| Intent mode is started and ready. |
 | MLVoiceState_IntentNotAvailable |  7| Intent mode is stopped and not available. |
+| MLVoiceState_IntentInvalidAppIntent |  8| Invalid app intent, double check content of JSON submitted with [MLVoiceIntentConfigureSettings()](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlvoiceintentconfiguresettings). Please refer to Voice Intent Development Toolkit from Magic Leap Hub to generate app intent content. |
 | MLVoiceState_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -430,7 +432,7 @@ Voice state in voice event.
 
 
 **API Level:**
-  * 20
+  * 31
 
 
 
@@ -1020,7 +1022,7 @@ Sets the callbacks for controller input events.
 ```cpp
 MLResult MLInputGetControllerState(
     MLHandle handle,
-    MLInputControllerState out_state[MLInput_MaxControllers]
+    struct MLInputControllerState out_state[MLInput_MaxControllers]
 )
 ```
 
@@ -1031,7 +1033,7 @@ Returns current state of all possible input controllers.
 |  |   |   |
 |--|--|--|
 | [MLHandle](/api-ref/api/Modules/group___platform/group___platform.md#uint64-t-mlhandle) |handle|Handle to the input tracker. |
-| [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) |out_state|Array of [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
+| struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) |out_state|Array of [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) structures that will be populated. The size of this array is at least the size [MLInput_MaxControllers](/api-ref/api/Modules/group___input/group___input.md#enums-mlinput-maxcontrollers). |
 
 **Returns**
 
@@ -1724,6 +1726,7 @@ Starts voice intent processing.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to start processing due to an invalid parameter. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully start intent processing. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to start intent processing because required voice intent feature is disabled in system settings. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -1767,6 +1770,7 @@ Stops voice intent processing.
 |--|--|--|
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_InvalidParam|Failed to stop processing due to an invalid parameter. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_Ok|Successfully stop intent processing. |
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLVoiceResult_IntentDisabled|Failed to stop intent processing because required voice intent feature is disabled in system settings. |
 | [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |MLResult_UnspecifiedFailure|The operation failed with an unspecified error.|
 **Required Permissions**:
 
@@ -1822,6 +1826,39 @@ Checks voice intent feature is enabled in the system.
 
 **API Level:**
   * 20
+
+
+
+
+-----------
+
+### MLVoiceGetResultString {#const-char-mlvoicegetresultstring}
+
+```cpp
+const char * MLVoiceGetResultString(
+    MLResult result
+)
+```
+
+Returns an ASCII string for MLVoiceResult and MLResult codes. 
+
+**Parameters**
+
+|  |   |   |
+|--|--|--|
+| [MLResult](/api-ref/api/Modules/group___platform/group___platform.md#int32-t-mlresult) |result|The input MLResult enum from MLVoice functions. |
+**Required Permissions**:
+
+  * None 
+
+
+
+
+**Return**: ASCII string containing readable version of result code.
+
+
+**API Level:**
+  * 31
 
 
 

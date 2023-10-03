@@ -375,6 +375,8 @@ Identifier of Magic Leap API results
 | IncompatibleSKU | | Operation failed because feature isn't supported on current device version.   |
 | PerceptionSystemNotStarted | | Operation failed because the Perception System was not started.   |
 | IllegalState | | Operation failed because it has been invoked at the wrong time.   |
+| LicenseError | | Operation failed because of missing/incompatible license.   |
+| InvalidTimestamp | | Operation failed because the timestamp parameter was outside the expected range.   |
 | AudioNotImplemented | (CodePrefix.MLAudioResult << 16)| Audio function not implemented.   |
 | AudioHandleNotFound | | Not a valid MLHandle for a sound or input.   |
 | AudioInvalidSampleRate | | Sample rate not supported.   |
@@ -472,6 +474,17 @@ Identifier of Magic Leap API results
 | AnchorsServiceUnavailable | | The operation failed because the underlying service is not yet available.   |
 | VoiceIntentDisabled | (CodePrefix.MLVoiceResult << 16)| Operation failed because a required voice intent feature is disabled in system settings.   |
 | WebViewZoomLimitReached | (CodePrefix.MLWebViewResult << 16)| Operation failed because zoom limit was reached.   |
+| SpacesServerError | (CodePrefix.MLSpaceResult << 16)| There was an error communicating with the server.   |
+| SpacesServiceUnavailable | | The operation failed because the underlying service is not yet available, retry later.   |
+| UnavailableSpace | | Space is not available.   |
+| IncompatibleSpace | | Space is not compatible with the current OS version.   |
+| SpaceAlreadyExists | | The operation failed because the Space being imported already exists in the device.   |
+| HeadsetFitIssue | (CodePrefix.MLFacialExpressionResult << 16)| Unable to detect the eyes, check MLHeadsetFitStatus.   |
+| EyeExpressionDisabled | | Operation failed because enable&#95;eye&#95;expression in MLFacialExpressionSettings is disabled.   |
+| PowerManagerNotConnect | (CodePrefix.MLPowerManager << 16)| Indicates the component is not connected.   |
+| PowerManagerInvalidStateTransition | | Indicates the component does not currently support transitioning to requested state.   |
+| PowerManagerStateTransitionsDisabled | | Indicates the component does not currently support transitioning to a different state.   |
+| PowerManagerUnsupportedState | | Indicates the component does not support the requested power state.   |
 | APIDLLNotFound | int.MaxValue - 0| APIDLLNotFound.   |
 | APISymbolsNotFound | int.MaxValue - 1| APIDLLSymbolsNotFound.   |
 

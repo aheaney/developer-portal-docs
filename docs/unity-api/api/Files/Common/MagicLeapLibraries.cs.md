@@ -56,6 +56,15 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLInputDll = MLSdkLoaderDll;
 
         protected const string MLNotificationsManagerDll = MLSdkLoaderDll;
+
+        protected const string MLVoiceDll = MLSdkLoaderDll;
+
+        protected const string MLSpaceDll = MLSdkLoaderDll;
+
+        protected const string MLPowerManagerDll = MLSdkLoaderDll;
+
+        protected const string MLMediaErrorDLL = MLSdkLoaderDll;
+        
 #else
         public const string MLPerceptionClientDll = "perception.magicleap";
 
@@ -76,6 +85,15 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLInputDll = "input.magicleap";
 
         protected const string MLNotificationsManagerDll = "system_notification_manager.magicleap";
+        
+        protected const string MLVoiceDll = "input.magicleap";
+        
+        protected const string MLSpaceDll = "space.magicleap";
+
+        protected const string MLPowerManagerDll = "power_manager.magicleap";
+
+        protected const string MLMediaErrorDLL = "media_error.magicleap";
+        
 #endif
         public const string UnityMagicLeapDll = "UnityMagicLeap";
 
@@ -84,8 +102,6 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MediaMuxerDll = "media_muxer.magicleap";
 
         protected const string MLMediaDRMDll = "media_drm.magicleap";
-
-        protected const string MLMediaErrorDLL = "media_error.magicleap";
 
         protected const string MLMediaCEA608DLL = "media_ccparser.magicleap";
 
@@ -96,8 +112,6 @@ namespace UnityEngine.XR.MagicLeap.Native
         protected const string MLMediaRecorderDll = "media_recorder.magicleap";
 
         protected const string MLNativeSurfaceDll = "native_surface.magicleap";
-
-        protected const string MLVoiceDll = "input.magicleap";
 
         protected const string MLWebViewDll = "webview.magicleap";
 

@@ -18,7 +18,7 @@ The `com.magicleap.unitysdk` package includes an editor tool that allows develop
 
 By default this page will appear as follows:
 
-![Permissions Settings](/img/unity/PermissionsSettingsManifest.png)
+<Image url= {require("/img/unity/PermissionsSettingsManifest.png")} >Permissions Settings</Image>
 
 :::caution
 
@@ -28,11 +28,11 @@ The warning at the bottom of the page indicates that a custom AndroidManfiest.xm
 
 To generate a custom AndroidManifest follow the instructions listed by going to **Project Settings > Player Settings > Android Platform (Android Icon) > Publishing Settings** and selecting the option Custom Main Manifest as shown:
 
-![Custom Main Manifest](/img/unity/CustomMainManifest.png)
+<Image url= {require("/img/unity/CustomMainManifest.png")} >Custom Main Manifest</Image>
 
 This will generate a file within the project under **Assets/Plugins/Android/AndroidManifest.xml** which will be a standard Android Manifest definition file. This file can be manually updated or via the Manifest Settings.
 
-![Default Manifest Settings Window](/img/unity/ManifestSettingsPermissions.png)
+<Image url= {require("/img/unity/ManifestSettingsPermissions.png")} >Default Manifest Settings Window</Image>
 
 ### Manifest template
 
@@ -52,6 +52,6 @@ Example:
 
 ## Determining Which Permissions Are Required
 
-You only need to include permissions for features that your application is actively using. To determine which permission is required for which feature, refer to the documentation on the developer portal here: [https://developer.magicleap.cloud/learn/docs/api-ref/Pages/permissions](/docs/api-ref/api/Pages/permissions.md). Also within the MagicLeapUnityExamples project, each sample scene lists which permissions are required for the feature to run.
+You only need to include permissions for features that your application is actively using. To determine which permission is required for which feature, refer to the documentation on the developer portal here: [https://developer.magicleap.cloud/learn/docs/api-ref/Pages/permissions](/docs/api-ref/api/Pages/permissions.md). Additionally, the MagicLeapUnityExamples project, each sample scene lists which permissions are required for the feature to run.
 
 For example, if you want to use the Meshing or the Planes API, the permission **com.magicleap.permission.WORLD_RECONSTRUCTION** would be required.

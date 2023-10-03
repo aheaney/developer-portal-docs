@@ -109,6 +109,10 @@ namespace UnityEngine.XR.MagicLeap
 
             IllegalState,
 
+            LicenseError,
+
+            InvalidTimestamp,
+
             // MLAudioResult
 
             AudioNotImplemented = (CodePrefix.MLAudioResult << 16),
@@ -321,6 +325,32 @@ namespace UnityEngine.XR.MagicLeap
 
             WebViewZoomLimitReached = (CodePrefix.MLWebViewResult << 16),
 
+            // MLSpaceResult
+
+            SpacesServerError = (CodePrefix.MLSpaceResult << 16),
+
+            SpacesServiceUnavailable,
+
+            UnavailableSpace,
+
+            IncompatibleSpace,
+
+            SpaceAlreadyExists,
+
+            // Facial Expression
+
+            HeadsetFitIssue = (CodePrefix.MLFacialExpressionResult << 16),
+
+            EyeExpressionDisabled,
+
+            PowerManagerNotConnect = (CodePrefix.MLPowerManager << 16),
+
+            PowerManagerInvalidStateTransition,
+
+            PowerManagerStateTransitionsDisabled,
+
+            PowerManagerUnsupportedState,
+
             APIDLLNotFound = int.MaxValue - 0,
 
             APISymbolsNotFound = int.MaxValue - 1,
@@ -351,7 +381,13 @@ namespace UnityEngine.XR.MagicLeap
 
             MLInputResult = 0x21dc,
 
-            MLWebViewResult = 0xebf7
+            MLWebViewResult = 0xebf7,
+
+            MLSpaceResult = 0x10cc,
+
+            MLPowerManager = 0x4c8a,
+
+            MLFacialExpressionResult = 0x18cd
         }
 
         public bool IsOk
@@ -421,6 +457,12 @@ namespace UnityEngine.XR.MagicLeap
                     break;
                 case CodePrefix.MLAnchorsResult:
                     codeString = "MLResult_" + resultCode;
+                    break;
+                case CodePrefix.MLPowerManager:
+                    codeString = resultCode.ToString();
+                    break;
+                case CodePrefix.MLFacialExpressionResult:
+                    codeString = resultCode.ToString();
                     break;
                 default:
                     // This will catch any unknown/invalid return values.

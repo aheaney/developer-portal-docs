@@ -42,11 +42,7 @@ namespace UnityEngine.XR.MagicLeap
 
             VoiceCapture,
 
-            FrontMics,
-
-            SideMics,
-
-            WorldCapture
+            WorldCapture = 4
         }
 
         public static int GetSampleRate(MicCaptureType captureType)
@@ -60,8 +56,6 @@ namespace UnityEngine.XR.MagicLeap
                     break;
 
                 case MicCaptureType.VoiceCapture:
-                case MicCaptureType.FrontMics:
-                case MicCaptureType.SideMics:
                 case MicCaptureType.WorldCapture:
                     sampleRate = 48000;
                     break;
@@ -82,8 +76,6 @@ namespace UnityEngine.XR.MagicLeap
                     channels = 1;
                     break;
 
-                case MicCaptureType.FrontMics:
-                case MicCaptureType.SideMics:
                 case MicCaptureType.WorldCapture:
                     channels = 2;
                     break;
@@ -94,7 +86,6 @@ namespace UnityEngine.XR.MagicLeap
 
         public abstract class Clip : IDisposable
         {
-            private static readonly HashSet<Clip> mlAudioClips = new();
 
             private readonly GCHandle gcHandle;
             private readonly uint numSamples;
@@ -103,7 +94,6 @@ namespace UnityEngine.XR.MagicLeap
 
             public Clip(MicCaptureType captureType, uint samplesLengthInSeconds, uint channels)
             {
-                mlAudioClips.Add(this);
                 gcHandle = GCHandle.Alloc(this, GCHandleType.Weak);
 
                 // get the best buffer format to use
@@ -123,8 +113,6 @@ namespace UnityEngine.XR.MagicLeap
 
             public void Dispose()
             {
-                mlAudioClips.Remove(this);
-
                 if (!Native.MagicLeapNativeBindings.MLHandleIsValid(captureHandle))
                     return;
 

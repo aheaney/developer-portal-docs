@@ -1010,27 +1010,39 @@ Global [MLCVCameraTrackingDestroy](/api-ref/api/Modules/group___c_v_camera/group
 
 *  None  
 
-Global [MLDepthCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraconnect)  (const [MLDepthCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_settings.md) *settings, MLHandle *out_handle)
+Global [MLDepthCameraCapabilityFilterInit](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcameracapabilityfilterinit)  ([MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) *inout_handle)
+
+*  None  
+
+Global [MLDepthCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameraconnect)  (const [MLDepthCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md) *settings, MLHandle *out_handle)
 
 *  com.magicleap.permission.DEPTH_CAMERA (protection level: dangerous)  
 
-Global [MLDepthCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameradisconnect)  (MLHandle handle)
+Global [MLDepthCameraDisconnect](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameradisconnect)  (MLHandle handle)
 
 *  None  
 
-Global [MLDepthCameraGetLatestDepthData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameragetlatestdepthdata)  (MLHandle handle, uint64_t timeout_ms, [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) **out_data)
+Global [MLDepthCameraGetCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetcapabilities)  (MLHandle handle, const [MLDepthCameraCapabilityFilter](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_filter.md) *filter, [MLDepthCameraCapabilityList](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_list.md) *out_caps)
 
 *  None  
 
-Global [MLDepthCameraReleaseDepthData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcamerareleasedepthdata)  (MLHandle handle, [MLDepthCameraData](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_data.md) *depth_camera_data)
+Global [MLDepthCameraGetLatestDepthData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameragetlatestdepthdata)  (MLHandle handle, uint64_t timeout_ms, [MLDepthCameraData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_data.md) *out_data)
 
 *  None  
 
-Global [MLDepthCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mldepthcamerasettingsinit)  ([MLDepthCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_settings.md) *inout_handle)
+Global [MLDepthCameraReleaseCapabilities](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcamerareleasecapabilities)  (MLHandle handle, [MLDepthCameraCapabilityList](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_capability_list.md) *out_caps)
 
 *  None  
 
-Global [MLDepthCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mldepthcameraupdatesettings)  (MLHandle handle, const [MLDepthCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_depth_camera_settings.md) *settings)
+Global [MLDepthCameraReleaseDepthData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcamerareleasedepthdata)  (MLHandle handle, [MLDepthCameraData](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_data.md) *depth_camera_data)
+
+*  None  
+
+Global [MLDepthCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#void-mldepthcamerasettingsinit)  ([MLDepthCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md) *inout_handle)
+
+*  None  
+
+Global [MLDepthCameraUpdateSettings](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/group___d_cam.md#mlresult-mldepthcameraupdatesettings)  (MLHandle handle, const [MLDepthCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___d_cam/struct_m_l_depth_camera_settings.md) *settings)
 
 *  None  
 
@@ -1046,27 +1058,27 @@ Global [MLEyeCalibrationGetState](/api-ref/api/Modules/group___eye_calibration/g
 
 *  None  
 
-Global [MLEyeCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraconnect)  (const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) *settings, MLHandle *out_handle)
+Global [MLEyeCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraconnect)  (const [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) *settings, MLHandle *out_handle)
 
 *  com.magicleap.permission.EYE_CAMERA (protection level: dangerous)  
 
-Global [MLEyeCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameradisconnect)  (MLHandle handle)
+Global [MLEyeCameraDisconnect](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameradisconnect)  (MLHandle handle)
 
 *  None  
 
-Global [MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameragetlatestcameradata)  (MLHandle handle, uint64_t timeout_ms, [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) *out_data)
+Global [MLEyeCameraGetLatestCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameragetlatestcameradata)  (MLHandle handle, uint64_t timeout_ms, [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) *out_data)
 
 *  None  
 
-Global [MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecamerareleasecameradata)  (MLHandle handle, [MLEyeCameraData](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_data.md) *eye_camera_data)
+Global [MLEyeCameraReleaseCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecamerareleasecameradata)  (MLHandle handle, [MLEyeCameraData](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_data.md) *eye_camera_data)
 
 *  None  
 
-Global [MLEyeCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mleyecamerasettingsinit)  ([MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) *inout_settings)
+Global [MLEyeCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#void-mleyecamerasettingsinit)  ([MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) *inout_settings)
 
 *  None  
 
-Global [MLEyeCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mleyecameraupdatesettings)  (MLHandle handle, const [MLEyeCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_eye_camera_settings.md) *settings)
+Global [MLEyeCameraUpdateSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/group___e_cam.md#mlresult-mleyecameraupdatesettings)  (MLHandle handle, const [MLEyeCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___e_cam/struct_m_l_eye_camera_settings.md) *settings)
 
 *  None  
 
@@ -1083,6 +1095,34 @@ Global [MLEyeTrackingGetStateEx](/api-ref/api/Modules/group___eye_tracking/group
 *  None  
 
 Global [MLEyeTrackingGetStaticData](/api-ref/api/Modules/group___eye_tracking/group___eye_tracking.md#mlresult-mleyetrackinggetstaticdata)  (MLHandle eye_tracker, [MLEyeTrackingStaticData](/api-ref/api/Modules/group___eye_tracking/struct_m_l_eye_tracking_static_data.md) *out_data)
+
+*  None  
+
+Global [MLFacialExpressionCreateClient](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressioncreateclient)  (const [MLFacialExpressionSettings](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_settings.md) *settings, MLHandle *out_handle)
+
+*  com.magicleap.permission.FACIAL_EXPRESSION (protection level: dangerous)  
+
+Global [MLFacialExpressionDestroyClient](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressiondestroyclient)  (MLHandle handle)
+
+*  None  
+
+Global [MLFacialExpressionEyeDataInit](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#void-mlfacialexpressioneyedatainit)  ([MLFacialExpressionEyeData](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_eye_data.md) *inout_eye_data)
+
+*  None  
+
+Global [MLFacialExpressionGetEyeData](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressiongeteyedata)  (MLHandle handle, [MLFacialExpressionEyeData](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_eye_data.md) *out_eye_data)
+
+*  None  
+
+Global [MLFacialExpressionGetResultString](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#const-char-mlfacialexpressiongetresultstring)  (MLResult result)
+
+*  None  
+
+Global [MLFacialExpressionSettingsInit](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#void-mlfacialexpressionsettingsinit)  ([MLFacialExpressionSettings](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_settings.md) *inout_settings)
+
+*  None  
+
+Global [MLFacialExpressionUpdateSettings](/api-ref/api/Modules/group___facial_expression/group___facial_expression.md#mlresult-mlfacialexpressionupdatesettings)  (MLHandle handle, const [MLFacialExpressionSettings](/api-ref/api/Modules/group___facial_expression/struct_m_l_facial_expression_settings.md) *settings)
 
 *  None  
 
@@ -1222,6 +1262,10 @@ Global [MLHandTrackingCreate](/api-ref/api/Modules/group___hand_tracking/group__
 
 *  com.magicleap.permission.HAND_TRACKING (protection level: normal)  
 
+Global [MLHandTrackingCreateEx](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackingcreateex)  (const [MLHandTrackingSettings](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_settings.md) *settings, MLHandle *out_handle)
+
+*  com.magicleap.permission.HAND_TRACKING (protection level: normal)  
+
 Global [MLHandTrackingDestroy](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackingdestroy)  (MLHandle hand_tracker)
 
 *  None  
@@ -1231,6 +1275,10 @@ Global [MLHandTrackingGetData](/api-ref/api/Modules/group___hand_tracking/group_
 *  None  
 
 Global [MLHandTrackingGetStaticData](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackinggetstaticdata)  (MLHandle hand_tracker, [MLHandTrackingStaticData](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_static_data.md) *out_data)
+
+*  None  
+
+Global [MLHandTrackingUpdateSettings](/api-ref/api/Modules/group___hand_tracking/group___hand_tracking.md#mlresult-mlhandtrackingupdatesettings)  (MLHandle hand_tracker, const [MLHandTrackingSettings](/api-ref/api/Modules/group___hand_tracking/struct_m_l_hand_tracking_settings.md) *settings)
 
 *  None  
 
@@ -1294,7 +1342,7 @@ Global [MLInputGetConnectedDevices](/api-ref/api/Modules/group___input/group___i
 
 *  None  
 
-Global [MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)  (MLHandle handle, [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])
+Global [MLInputGetControllerState](/api-ref/api/Modules/group___input/group___input.md#mlresult-mlinputgetcontrollerstate)  (MLHandle handle, struct [MLInputControllerState](/api-ref/api/Modules/group___input/struct_m_l_input_controller_state.md) out_state[MLInput_MaxControllers])
 
 *  None  
 
@@ -1720,7 +1768,7 @@ Global [MLMediaDRMSign](/api-ref/api/Modules/group___media_player/group___media_
 
 Global [MLMediaDRMSignRSA](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmsignrsa)  (MLHandle media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *session_id, const [MLMediaDRMRSAInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_r_s_a_input_param.md) *rsa_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *message, [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *out_signature)
 
-*  TBD (was DrmCertificates permission)  
+*  None  
 
 Global [MLMediaDRMVerify](/api-ref/api/Modules/group___media_player/group___media_player.md#mlresult-mlmediadrmverify)  (MLHandle media_drm, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *session_id, const [MLMediaDRMHMACInputParam](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_h_m_a_c_input_param.md) *hmac_key_param, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *message, const [MLMediaDRMByteArray](/api-ref/api/Modules/group___media_player/struct_m_l_media_d_r_m_byte_array.md) *signature, bool *out_match)
 
@@ -2186,7 +2234,7 @@ Global [MLMediaRecorderGetInputSurface](/api-ref/api/Modules/group___media_recor
 
 *  None  
 
-Global [MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)  (MLHandle media_recorder, int32_t *max_amp)
+Global [MLMediaRecorderGetMaxAmplitude](/api-ref/api/Modules/group___media_recorder/group___media_recorder.md#mlresult-mlmediarecordergetmaxamplitude)  (MLHandle media_recorder, int32_t *inout_max_amp)
 
 *  None  
 
@@ -2402,6 +2450,42 @@ Global [MLNativeSurfaceTextureUpdateTexImage](/api-ref/api/Modules/group___media
 
 *  None  
 
+Global [MLOcclusionCreateClient](/api-ref/api/Modules/group___occlusion/group___occlusion.md#mlresult-mlocclusioncreateclient)  (const [MLOcclusionSettings](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_settings.md) *settings, MLHandle *out_client_handle)
+
+*  com.magicleap.permission.SPATIAL_MAPPING (protection level: dangerous)  
+
+Global [MLOcclusionDestroyClient](/api-ref/api/Modules/group___occlusion/group___occlusion.md#mlresult-mlocclusiondestroyclient)  (MLHandle client_handle)
+
+*  None  
+
+Global [MLOcclusionGetLatestMesh](/api-ref/api/Modules/group___occlusion/group___occlusion.md#mlresult-mlocclusiongetlatestmesh)  (MLHandle handle, const [MLOcclusionMeshQuery](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh_query.md) *mesh_query, [MLOcclusionMesh](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh.md) *out_mesh_data)
+
+*  None  
+
+Global [MLOcclusionMeshInit](/api-ref/api/Modules/group___occlusion/group___occlusion.md#void-mlocclusionmeshinit)  ([MLOcclusionMesh](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh.md) *inout_mesh)
+
+*  None  
+
+Global [MLOcclusionMeshQueryInit](/api-ref/api/Modules/group___occlusion/group___occlusion.md#void-mlocclusionmeshqueryinit)  ([MLOcclusionMeshQuery](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh_query.md) *inout_mesh_query)
+
+*  None  
+
+Global [MLOcclusionReleaseMesh](/api-ref/api/Modules/group___occlusion/group___occlusion.md#mlresult-mlocclusionreleasemesh)  (MLHandle handle, [MLOcclusionMesh](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_mesh.md) *mesh_data)
+
+*  None  
+
+Global [MLOcclusionSettingsInit](/api-ref/api/Modules/group___occlusion/group___occlusion.md#void-mlocclusionsettingsinit)  ([MLOcclusionSettings](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_settings.md) *inout_settings)
+
+*  None  
+
+Global [MLOcclusionUpdateSettings](/api-ref/api/Modules/group___occlusion/group___occlusion.md#mlresult-mlocclusionupdatesettings)  (MLHandle handle, const [MLOcclusionSettings](/api-ref/api/Modules/group___occlusion/struct_m_l_occlusion_settings.md) *settings)
+
+*  None  
+
+Global [MLPerceptionGetPredictedSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptiongetpredictedsnapshot)  (MLTime timestamp, MLSnapshot **out_snapshot)
+
+*  None  
+
 Global [MLPerceptionGetSnapshot](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlperceptiongetsnapshot)  (MLSnapshot **out_snapshot)
 
 *  None  
@@ -2446,7 +2530,63 @@ Global [MLPlatformGetAPILevel](/api-ref/api/Modules/group___platform/group___pla
 
 *  None  
 
+Global [MLPowerManagerCreate](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagercreate)  (MLPowerManagerComponent component, MLHandle *out_handle)
+
+*  none  
+
+Global [MLPowerManagerDestroy](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerdestroy)  (MLHandle handle)
+
+*  None  
+
+Global [MLPowerManagerGetAvailablePowerStates](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailablepowerstates)  (MLHandle handle, const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) *in_info, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) *out_states)
+
+*  None  
+
+Global [MLPowerManagerGetAvailableProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetavailableproperties)  (MLHandle handle, const [MLPowerManagerPropertyTypeInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_info.md) *in_info, [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) *out_properties)
+
+*  None  
+
+Global [MLPowerManagerGetComponentProperties](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetcomponentproperties)  (MLHandle handle, const [MLPowerManagerPropertyInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_info.md) *in_info, [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) *out_properties)
+
+*  None 
+
+Global [MLPowerManagerGetPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagergetpowerstate)  (MLHandle handle, const [MLPowerManagerPowerStateInfo](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_info.md) *in_info, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) *out_state)
+
+*  None 
+
+Global [MLPowerManagerGetResultString](/api-ref/api/Modules/group___power_manager/group___power_manager.md#const-char-mlpowermanagergetresultstring)  (MLResult result_code)
+
+*  None  
+
+Global [MLPowerManagerReleasePowerStateData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepowerstatedata)  (MLHandle handle, [MLPowerManagerPowerStateData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_data.md) *power_states)
+
+*  None  
+
+Global [MLPowerManagerReleasePropertyData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertydata)  (MLHandle handle, [MLPowerManagerPropertyData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_data.md) *properties)
+
+*  None  
+
+Global [MLPowerManagerReleasePropertyTypeData](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagerreleasepropertytypedata)  (MLHandle handle, [MLPowerManagerPropertyTypeData](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_property_type_data.md) *properties)
+
+*  None  
+
+Global [MLPowerManagerSetCallbacks](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetcallbacks)  (MLHandle handle, [MLPowerManagerCallbacks](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_callbacks.md) *cb, void *user_data)
+
+*  None  
+
+Global [MLPowerManagerSetPowerState](/api-ref/api/Modules/group___power_manager/group___power_manager.md#mlresult-mlpowermanagersetpowerstate)  (MLHandle handle, const [MLPowerManagerPowerStateSettings](/api-ref/api/Modules/group___power_manager/struct_m_l_power_manager_power_state_settings.md) *settings)
+
+*  None 
+
+Global [MLSnapshotGetPoseInBase](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgetposeinbase)  (const MLSnapshot *snapshot, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) *base_id, const [MLCoordinateFrameUID](/api-ref/api/Modules/group___perception/struct_m_l_coordinate_frame_u_i_d.md) *id, [MLPose](/api-ref/api/Modules/group___common/struct_m_l_pose.md) *out_pose)
+
+*  None  
+
 Global [MLSnapshotGetResultString](/api-ref/api/Modules/group___perception/group___perception.md#const-char-mlsnapshotgetresultstring)  (MLResult result_code)
+
+*  None  
+
+Global [MLSnapshotGetStaticData](/api-ref/api/Modules/group___perception/group___perception.md#mlresult-mlsnapshotgetstaticdata)  ([MLSnapshotStaticData](/api-ref/api/Modules/group___perception/struct_m_l_snapshot_static_data.md) *out_static_data)
 
 *  None  
 
@@ -2458,147 +2598,151 @@ Global [MLSnapshotGetTransformWithDerivatives](/api-ref/api/Modules/group___perc
 
 *  None  
 
-Global [MLSpaceCallbacksInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspacecallbacksinit)  ([MLSpaceCallbacks](/api-ref/api/Modules/group___space/struct_m_l_space_callbacks.md) *inout_callbacks)
+Global [MLSpaceCallbacksInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacecallbacksinit)  ([MLSpaceCallbacks](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_callbacks.md) *inout_callbacks)
 
 *  None  
 
-Global [MLSpaceExportInfoInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspaceexportinfoinit)  ([MLSpaceExportInfo](/api-ref/api/Modules/group___space/struct_m_l_space_export_info.md) *inout_info)
+Global [MLSpaceExportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceexportinfoinit)  ([MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceExportSpace](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspaceexportspace)  (const [MLSpaceExportInfo](/api-ref/api/Modules/group___space/struct_m_l_space_export_info.md) *export_info, [MLSpaceExportOutData](/api-ref/api/Modules/group___space/struct_m_l_space_export_out_data.md) *out_data)
+Global [MLSpaceExportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceexportspace)  (const [MLSpaceExportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_info.md) *export_info, [MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) *out_data)
 
 *  com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous)  
 
-Global [MLSpaceGetLocalizationResult](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetlocalizationresult)  (MLHandle handle, [MLSpaceLocalizationResult](/api-ref/api/Modules/group___space/struct_m_l_space_localization_result.md) *out_localization_result)
+Global [MLSpaceGetLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetlocalizationresult)  (MLHandle handle, [MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) *out_localization_result)
 
 *  None  
 
-Global [MLSpaceGetResultString](/api-ref/api/Modules/group___space/group___space.md#const-char-mlspacegetresultstring)  (MLResult result)
+Global [MLSpaceGetResultString](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#const-char-mlspacegetresultstring)  (MLResult result)
 
 *  None  
 
-Global [MLSpaceGetSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacegetspacelist)  (MLHandle handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) *query_filter, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) *space_list)
+Global [MLSpaceGetSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacegetspacelist)  (MLHandle handle, const [MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) *query_filter, [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) *out_space_list)
 
 *  None  
 
-Global [MLSpaceImportInfoInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspaceimportinfoinit)  ([MLSpaceImportInfo](/api-ref/api/Modules/group___space/struct_m_l_space_import_info.md) *inout_info)
+Global [MLSpaceImportInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceimportinfoinit)  ([MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceImportSpace](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspaceimportspace)  (const [MLSpaceImportInfo](/api-ref/api/Modules/group___space/struct_m_l_space_import_info.md) *import_info, [MLSpaceImportOutData](/api-ref/api/Modules/group___space/struct_m_l_space_import_out_data.md) *out_data)
+Global [MLSpaceImportSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspaceimportspace)  (const [MLSpaceImportInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_info.md) *import_info, [MLSpaceImportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_import_out_data.md) *out_data)
 
 *  com.magicleap.permission.SPACE_IMPORT_EXPORT (protection level: dangerous)  
 
-Global [MLSpaceInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspaceinit)  ([MLSpace](/api-ref/api/Modules/group___space/struct_m_l_space.md) *inout_info)
+Global [MLSpaceInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspaceinit)  ([MLSpace](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceListInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspacelistinit)  ([MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) *inout_info)
+Global [MLSpaceListInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelistinit)  ([MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceLocalizationInfoInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspacelocalizationinfoinit)  ([MLSpaceLocalizationInfo](/api-ref/api/Modules/group___space/struct_m_l_space_localization_info.md) *inout_info)
+Global [MLSpaceLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationinfoinit)  ([MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceLocalizationResultInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspacelocalizationresultinit)  ([MLSpaceLocalizationResult](/api-ref/api/Modules/group___space/struct_m_l_space_localization_result.md) *inout_info)
+Global [MLSpaceLocalizationResultInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacelocalizationresultinit)  ([MLSpaceLocalizationResult](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_result.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceManagerCreate](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacemanagercreate)  (const [MLSpaceManagerSettings](/api-ref/api/Modules/group___space/struct_m_l_space_manager_settings.md) *settings, MLHandle *out_handle)
+Global [MLSpaceManagerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagercreate)  (const [MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) *settings, MLHandle *out_handle)
 
 *  com.magicleap.permission.SPACE_MANAGER (protection level: normal)  
 
-Global [MLSpaceManagerDestroy](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacemanagerdestroy)  (MLHandle handle)
+Global [MLSpaceManagerDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacemanagerdestroy)  (MLHandle handle)
 
 *  None  
 
-Global [MLSpaceManagerSettingsInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspacemanagersettingsinit)  ([MLSpaceManagerSettings](/api-ref/api/Modules/group___space/struct_m_l_space_manager_settings.md) *inout_info)
+Global [MLSpaceManagerSettingsInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacemanagersettingsinit)  ([MLSpaceManagerSettings](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_manager_settings.md) *inout_info)
 
 *  None  
 
-Global [MLSpaceQueryFilterInit](/api-ref/api/Modules/group___space/group___space.md#void-mlspacequeryfilterinit)  ([MLSpaceQueryFilter](/api-ref/api/Modules/group___space/struct_m_l_space_query_filter.md) *inout_query_filter)
+Global [MLSpaceQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#void-mlspacequeryfilterinit)  ([MLSpaceQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_query_filter.md) *inout_query_filter)
 
 *  None  
 
-Global [MLSpaceReleaseExportData](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacereleaseexportdata)  ([MLSpaceExportOutData](/api-ref/api/Modules/group___space/struct_m_l_space_export_out_data.md) *space_data)
+Global [MLSpaceReleaseExportData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleaseexportdata)  ([MLSpaceExportOutData](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_export_out_data.md) *space_data)
 
 *  None  
 
-Global [MLSpaceReleaseSpaceList](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacereleasespacelist)  (MLHandle handle, [MLSpaceList](/api-ref/api/Modules/group___space/struct_m_l_space_list.md) *space_list)
+Global [MLSpaceReleaseSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacereleasespacelist)  (MLHandle handle, [MLSpaceList](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_list.md) *space_list)
 
 *  None  
 
-Global [MLSpaceRequestLocalization](/api-ref/api/Modules/group___space/group___space.md#mlresult-mlspacerequestlocalization)  (MLHandle handle, const [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___space/struct_m_l_space_localization_info.md) *localization_info)
+Global [MLSpaceRequestLocalization](/api-ref/api/Modules/group___magic_leap_spaces/group___space/group___space.md#mlresult-mlspacerequestlocalization)  (MLHandle handle, const [MLSpaceLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___space/struct_m_l_space_localization_info.md) *localization_info)
 
 *  None  
 
-Global [MLSpatialAnchorCreate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorcreate)  (MLHandle handle, const [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) *create_info, [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) *out_anchor)
+Global [MLSpatialAnchorCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorcreate)  (MLHandle handle, const [MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) *create_info, [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) *out_anchor)
 
 *  None  
 
-Global [MLSpatialAnchorCreateInfoInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorcreateinfoinit)  ([MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) *inout_info)
+Global [MLSpatialAnchorCreateInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorcreateinfoinit)  ([MLSpatialAnchorCreateInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_create_info.md) *inout_info)
 
 *  None  
 
-Global [MLSpatialAnchorDelete](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchordelete)  (MLHandle handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)
+Global [MLSpatialAnchorDelete](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchordelete)  (MLHandle handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)
 
 *  None  
 
-Global [MLSpatialAnchorGetLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorgetlocalizationinfo)  (MLHandle handle, [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) *out_localization_info)
+Global [MLSpatialAnchorGetLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorgetlocalizationinfo)  (MLHandle handle, [MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) *out_localization_info)
 
 *  None  
 
-Global [MLSpatialAnchorInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorinit)  ([MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) *inout_anchor)
+Global [MLSpatialAnchorGetResultString](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#const-char-mlspatialanchorgetresultstring)  (MLResult result)
 
 *  None  
 
-Global [MLSpatialAnchorLocalizationInfoInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorlocalizationinfoinit)  ([MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) *inout_info)
+Global [MLSpatialAnchorInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorinit)  ([MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) *inout_anchor)
 
 *  None  
 
-Global [MLSpatialAnchorPublish](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorpublish)  (MLHandle handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)
+Global [MLSpatialAnchorLocalizationInfoInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorlocalizationinfoinit)  ([MLSpatialAnchorLocalizationInfo](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_localization_info.md) *inout_info)
 
 *  None  
 
-Global [MLSpatialAnchorQueryCreate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerycreate)  (MLHandle handle, const [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) *query_filter, MLHandle *out_query_handle, uint32_t *out_results_count)
+Global [MLSpatialAnchorPublish](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorpublish)  (MLHandle handle, [MLUUID](/api-ref/api/Modules/group___common/struct_m_l_u_u_i_d.md) anchor_id)
 
 *  None  
 
-Global [MLSpatialAnchorQueryDestroy](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerydestroy)  (MLHandle handle, MLHandle query_handle)
+Global [MLSpatialAnchorQueryCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerycreate)  (MLHandle handle, const [MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) *query_filter, MLHandle *out_query_handle, uint32_t *out_results_count)
 
 *  None  
 
-Global [MLSpatialAnchorQueryFilterInit](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorqueryfilterinit)  ([MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) *inout_query_filter)
+Global [MLSpatialAnchorQueryDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerydestroy)  (MLHandle handle, MLHandle query_handle)
 
 *  None  
 
-Global [MLSpatialAnchorQueryGetResult](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerygetresult)  (MLHandle handle, MLHandle query_handle, uint32_t first_index, uint32_t last_index, [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) *out_results)
+Global [MLSpatialAnchorQueryFilterInit](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#void-mlspatialanchorqueryfilterinit)  ([MLSpatialAnchorQueryFilter](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor_query_filter.md) *inout_query_filter)
 
 *  None  
 
-Global [MLSpatialAnchorTrackerCreate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackercreate)  (MLHandle *out_handle)
+Global [MLSpatialAnchorQueryGetResult](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorquerygetresult)  (MLHandle handle, MLHandle query_handle, uint32_t first_index, uint32_t last_index, [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) *out_results)
+
+*  None  
+
+Global [MLSpatialAnchorTrackerCreate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackercreate)  (MLHandle *out_handle)
 
 *  com.magicleap.permission.SPATIAL_ANCHOR (protection level: normal)  
 
-Global [MLSpatialAnchorTrackerDestroy](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackerdestroy)  (MLHandle handle)
+Global [MLSpatialAnchorTrackerDestroy](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchortrackerdestroy)  (MLHandle handle)
 
 *  None  
 
-Global [MLSpatialAnchorUpdate](/api-ref/api/Modules/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorupdate)  (MLHandle handle, const [MLSpatialAnchor](/api-ref/api/Modules/group___spatial_anchor/struct_m_l_spatial_anchor.md) *anchor)
+Global [MLSpatialAnchorUpdate](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/group___spatial_anchor.md#mlresult-mlspatialanchorupdate)  (MLHandle handle, const [MLSpatialAnchor](/api-ref/api/Modules/group___magic_leap_spaces/group___spatial_anchor/struct_m_l_spatial_anchor.md) *anchor)
 
 *  None  
 
-Global [MLSystemNotificationManagerCreate](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagercreate)  (MLHandle *out_handle)
+Global [MLSystemNotificationManagerCreate](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md#mlresult-mlsystemnotificationmanagercreate)  (MLHandle *out_handle)
 
 *  com.magicleap.permission.SYSTEM_NOTIFICATION (protection level: normal)  
 
-Global [MLSystemNotificationManagerDestroy](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagerdestroy)  (MLHandle handle)
+Global [MLSystemNotificationManagerDestroy](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md#mlresult-mlsystemnotificationmanagerdestroy)  (MLHandle handle)
 
 *  None  
 
-Global [MLSystemNotificationManagerSetNotifications](/api-ref/api/Modules/group___notification_manager/group___notification_manager.md#mlresult-mlsystemnotificationmanagersetnotifications)  (MLHandle handle, bool suppress)
+Global [MLSystemNotificationManagerSetNotifications](/api-ref/api/Modules/group___system_notification_manager/group___system_notification_manager.md#mlresult-mlsystemnotificationmanagersetnotifications)  (MLHandle handle, bool suppress)
 
 *  None  
 
@@ -2607,6 +2751,10 @@ Global [MLTimeConvertMLTimeToSystemTime](/api-ref/api/Modules/group___time/group
 *  None  
 
 Global [MLTimeConvertSystemTimeToMLTime](/api-ref/api/Modules/group___time/group___time.md#mlresult-mltimeconvertsystemtimetomltime)  (const struct timespec *timespec_time, MLTime *out_ml_time)
+
+*  None  
+
+Global [MLVoiceGetResultString](/api-ref/api/Modules/group___input/group___input.md#const-char-mlvoicegetresultstring)  (MLResult result)
 
 *  None  
 
@@ -2778,27 +2926,27 @@ Global [MLWebViewZoomOut](/api-ref/api/Modules/group___web_view/group___web_view
 
 *  None  
 
-Global [MLWorldCameraConnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraconnect)  (const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) *settings, MLHandle *out_handle)
+Global [MLWorldCameraConnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraconnect)  (const [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) *settings, MLHandle *out_handle)
 
 *  android.permission.CAMERA (protection level: dangerous)  
 
-Global [MLWorldCameraDisconnect](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameradisconnect)  (MLHandle handle)
+Global [MLWorldCameraDisconnect](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameradisconnect)  (MLHandle handle)
 
 *  None  
 
-Global [MLWorldCameraGetLatestWorldCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameragetlatestworldcameradata)  (MLHandle handle, uint64_t timeout_ms, [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) **out_data)
+Global [MLWorldCameraGetLatestWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameragetlatestworldcameradata)  (MLHandle handle, uint64_t timeout_ms, [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) **out_data)
 
 *  None  
 
-Global [MLWorldCameraReleaseCameraData](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcamerareleasecameradata)  (MLHandle handle, [MLWorldCameraData](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_data.md) *world_camera_data)
+Global [MLWorldCameraReleaseCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcamerareleasecameradata)  (MLHandle handle, [MLWorldCameraData](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_data.md) *world_camera_data)
 
 *  None  
 
-Global [MLWorldCameraSettingsInit](/api-ref/api/Modules/group___camera/group___camera.md#void-mlworldcamerasettingsinit)  ([MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) *inout_handle)
+Global [MLWorldCameraSettingsInit](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#void-mlworldcamerasettingsinit)  ([MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) *inout_handle)
 
 *  None  
 
-Global [MLWorldCameraUpdateSettings](/api-ref/api/Modules/group___camera/group___camera.md#mlresult-mlworldcameraupdatesettings)  (MLHandle handle, const [MLWorldCameraSettings](/api-ref/api/Modules/group___camera/struct_m_l_world_camera_settings.md) *settings)
+Global [MLWorldCameraUpdateSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/group___w_cam.md#mlresult-mlworldcameraupdatesettings)  (MLHandle handle, const [MLWorldCameraSettings](/api-ref/api/Modules/group___pixel_sensors/group___w_cam/struct_m_l_world_camera_settings.md) *settings)
 
 *  None  
 

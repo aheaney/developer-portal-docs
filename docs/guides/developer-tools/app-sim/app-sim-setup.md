@@ -39,7 +39,7 @@ Intel integrated graphics are not supported. Consult the tables below for the mi
 
 Application Simulator is typically installed as an optional component when installing bundles in the [ML Hub's Package Manager](/docs/guides/developer-tools/ml-hub/ml-hub-package-manager.md). If the Application Simulator activity card is already present in the ML Hub, you have already installed Application Simulator, but the Application Simulator Runtime package may need to be updated when you update the ML Hub (the app will let you know if this is required).
 
-![Start Application Simulator from the Application Simulator Activity Card](/img/app-sim/ml_hub_app_sim.png)
+<Image url= {require("/img/app-sim/ml_hub_app_sim.png")} >Start Application Simulator from the Application Simulator Activity Card</Image>
 
 If the card is not present, you can install Application Simulator in the ML Hub as follows:
 
@@ -48,12 +48,12 @@ If the card is not present, you can install Application Simulator in the ML Hub 
 3. Click the **All** tab.
 4. Go to **Magic Leap Hub Modules > Magic Leap Application Simulator**, and then click the **Install** icon.
 
-![Installing Application Simulator from Package Manager](/img/app-sim/app_sim_download.png)
+<Image url= {require("/img/app-sim/app_sim_download.png")} >Installing Application Simulator from Package Manager</Image>
 
 5. Verify that the **Magic Leap Application Simulator (ZI) Runtime** package has been added to the **Change Summary** pane. If not, find and add it under **Common Packages**.
 6. Click **Apply Changes**.
 
-![Apply Changes](/img/app-sim/app_sim_packages_download.png)
+<Image url= {require("/img/app-sim/app_sim_packages_download.png")} >Apply Changes</Image>
 
 7. Restart the ML Hub when prompted to do so.
 
@@ -63,15 +63,13 @@ The first time you use Application Simulator, you need to make an SDK and target
 
 1. Click **Start Application Simulator** on the Application Simulator activity card in the ML Hub. The Application Simulator module workspace appears, and the Target Selector dialog automatically comes up.
 
-![Start Application Simulator](/img/app-sim/target_connection.png)
+<Image url= {require("/img/app-sim/target_connection.png")} >Start Application Simulator</Image>
 
 1. Select an installed SDK, and then a target as follows:
 
     - **Simulator**: If you do not have a device, Application Simulator can render graphics to a window that is a composite of simulated Headset graphics on top of 3D geometry of a virtual room. Headpose, Controller input, gestures, and similar sensory input is simulated through a GUI. The 3D geometry in the virtual room services world reconstruction requests (meshing, planes, raycast). When iterating using the Simulator, your app's content is composited together with a depiction of your virtual room and rendered to the Device View.
 
     - **Your Device**: If you have a device, Application Simulator can stream the rendered frames to the Headset. Headpose, Controller input, gestures, and similar sensory input is sent from the device to the computer. You are able to effectively preview the app without needing to go through a time-consuming build and deploy process.
-
-    - **Hybrid**: Combines the power of infinite test scenarios within the Simulator with the responsiveness of the physical device sensors. Headpose, Controller input, Hand Tracking, Eye Gaze, and similar sensory input is sent from the device to the computer and is mirrored in the Virtual Room. World reconstruction requests continue to make use of 3D geometry in the virtual room.
 
 2. Click **Connect**.
 

@@ -46,10 +46,10 @@ title: ml_graphics.h
 | enum | **[MLGraphicsFlags](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsflags)** <br></br> { <br></br>[MLGraphicsFlags_NoDepth](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-nodepth) = 1 << 0,<br></br> [MLGraphicsFlags_DebugMode](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-debugmode) = 1 << 2,<br></br> [MLGraphicsFlags_Headlock](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-headlock) = 1 << 3,<br></br> [MLGraphicsFlags_Default](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-default) = 0,<br></br> [MLGraphicsFlags_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsflags-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The graphics flags used as part of client creation.  |
 | enum | **[MLSurfaceFormat](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlsurfaceformat)** <br></br> { <br></br>[MLSurfaceFormat_Unknown](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-unknown) = 0,<br></br> [MLSurfaceFormat_RGBA8UNorm](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba8unorm),<br></br> [MLSurfaceFormat_RGBA8UNormSRGB](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba8unormsrgb),<br></br> [MLSurfaceFormat_RGB10A2UNorm](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgb10a2unorm),<br></br> [MLSurfaceFormat_RGBA16Float](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-rgba16float),<br></br> [MLSurfaceFormat_D32Float](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d32float),<br></br> [MLSurfaceFormat_D24NormS8](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d24norms8),<br></br> [MLSurfaceFormat_D32FloatS8](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-d32floats8),<br></br> [MLSurfaceFormat_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlsurfaceformat-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The definition of the supported color/depth surface formats.  |
 | enum | **[MLGraphicsVirtualCameraName](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsvirtualcameraname)** <br></br> { <br></br>[MLGraphicsVirtualCameraName_Combined](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-combined) = -1,<br></br> [MLGraphicsVirtualCameraName_Left](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-left) = 0,<br></br> [MLGraphicsVirtualCameraName_Right](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-right),<br></br> [MLGraphicsVirtualCameraName_Count](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-count),<br></br> [MLGraphicsVirtualCameraName_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsvirtualcameraname-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>The metadata name associated with each virtual camera.  |
-| enum | **[Anonymous Enum 9](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-9)** <br></br> { <br></br>[MLGraphics_BufferCount](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphics-buffercount) = 3<br></br>} |
+| enum | **[Anonymous Enum 10](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-10)** <br></br> { <br></br>[MLGraphics_BufferCount](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphics-buffercount) = 3<br></br>} |
 | enum | **[MLGraphicsProjectionType](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsprojectiontype)** <br></br> { <br></br>[MLGraphicsProjectionType_SignedZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-signedz) = 0,<br></br> [MLGraphicsProjectionType_ReversedInfiniteZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-reversedinfinitez) = 1,<br></br> [MLGraphicsProjectionType_UnsignedZ](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-unsignedz) = 2,<br></br> [MLGraphicsProjectionType_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsprojectiontype-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines the requested projection matrix model for rendering.  |
 | enum | **[MLGraphicsEnvironmentBlendMode](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-mlgraphicsenvironmentblendmode)** <br></br> { <br></br>[MLGraphicsEnvironmentBlendMode_Additive](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-additive) = 0,<br></br> [MLGraphicsEnvironmentBlendMode_Alpha_Blend](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-alpha-blend) = 1,<br></br> [MLGraphicsEnvironmentBlendMode_Ensure32Bits](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsenvironmentblendmode-ensure32bits) = 0x7FFFFFFF<br></br>}<br></br>Defines how the final frame will be blended with environment.  |
-| enum | **[Anonymous Enum 10](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-10)** <br></br> { <br></br>[MLGraphicsBlobCache_DefaultMaxEntryBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxentrybytes) = 512 * 1024,<br></br> [MLGraphicsBlobCache_DefaultMaxTotalBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxtotalbytes) = 8 * 1024 * 1024<br></br>} |
+| enum | **[Anonymous Enum 11](/api-ref/api/Modules/group___graphics/group___graphics.md#enums-anonymous-enum-11)** <br></br> { <br></br>[MLGraphicsBlobCache_DefaultMaxEntryBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxentrybytes) = 512 * 1024,<br></br> [MLGraphicsBlobCache_DefaultMaxTotalBytes](/api-ref/api/Files/ml__graphics_8h.md#enums-mlgraphicsblobcache-defaultmaxtotalbytes) = 8 * 1024 * 1024<br></br>} |
 
 ## Functions
 
@@ -81,10 +81,10 @@ title: ml_graphics.h
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
-| MLGraphicsFlags_NoDepth |  1 << 0| The client will not provide a depth buffer to the graphics system as part of rendering. Therefore the handle returned for all depth related resources from the graphics APIs will be invalid. .|
-| MLGraphicsFlags_DebugMode |  1 << 2| Create a debug client with a debug configuration that provides extended logcat error logging. Useful to debug failures in API calls to the graphics system. .|
-| MLGraphicsFlags_Headlock |  1 << 3| The client will lock all the content to the user's head pose. When enabled all of the content rendered by the app and system notifications will be in head locked mode. Use this mode with caution. .|
-| MLGraphicsFlags_Default |  0| When #graphics_flags is set to default, the client configuration returned is the default configuration (color/depth, origin lower left, non-debug, no headlock). .|
+| MLGraphicsFlags_NoDepth |  1 << 0| The client will not provide a depth buffer to the graphics system as part of rendering. Therefore the handle returned for all depth related resources from the graphics APIs will be invalid. |
+| MLGraphicsFlags_DebugMode |  1 << 2| Create a debug client with a debug configuration that provides extended logcat error logging. Useful to debug failures in API calls to the graphics system. |
+| MLGraphicsFlags_Headlock |  1 << 3| The client will lock all the content to the user's head pose. When enabled all of the content rendered by the app and system notifications will be in head locked mode. Use this mode with caution. |
+| MLGraphicsFlags_Default |  0| When #graphics_flags is set to default, the client configuration returned is the default configuration (color/depth, origin lower left, non-debug, no headlock). |
 | MLGraphicsFlags_Ensure32Bits |  0x7FFFFFFF| Ensure enum is represented as 32 bits. |
 
 
@@ -105,7 +105,7 @@ The flags are used to define the #graphics_flags member of the [MLGraphicsOption
 | ---------- | ----- | ----------- |
 | MLSurfaceFormat_Unknown |  0| Invalid format for color/depth. |
 | MLSurfaceFormat_RGBA8UNorm | | 32bit linear color format (RGBA8). |
-| MLSurfaceFormat_RGBA8UNormSRGB | | Gamma 2.2 32bit sRGB color format (RGBA8). Clients requesting this format are required to encode the final color into this surface as defined by the IEC 61966-2-1 specification. .|
+| MLSurfaceFormat_RGBA8UNormSRGB | | Gamma 2.2 32bit sRGB color format (RGBA8). Clients requesting this format are required to encode the final color into this surface as defined by the IEC 61966-2-1 specification. |
 | MLSurfaceFormat_RGB10A2UNorm | | 32bit linear color format (R10G10B10A2). |
 | MLSurfaceFormat_RGBA16Float | | 64bit linear color format (R16G16B16A16). |
 | MLSurfaceFormat_D32Float | | 32bit floating point depth buffer (D32F). |
@@ -147,7 +147,7 @@ APIs within the graphics system will return information specific to a single vir
 
 -----------
 
-### Anonymous Enum 9 {#enums-anonymous-enum-9}
+### Anonymous Enum 10 {#enums-anonymous-enum-10}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -211,7 +211,7 @@ For now only used for controlling the segmented dimmer behavior.
 
 -----------
 
-### Anonymous Enum 10 {#enums-anonymous-enum-10}
+### Anonymous Enum 11 {#enums-anonymous-enum-11}
 
 | Enumerator | Value | Description |
 | ---------- | ----- | ----------- |
@@ -439,7 +439,7 @@ Information about the current render frame populated by [MLGraphicsBeginFrameEx(
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -574,7 +574,7 @@ Initializes default values for [MLGraphicsFrameInfo](/api-ref/api/Modules/group_
 
 
 **API Level:**
-  * 7
+  * 27
 
 
 
@@ -1169,6 +1169,7 @@ Can be called any time after the client has been created. Updates are reflected 
 #pragma once
 
 #include "ml_api.h"
+#include "ml_time.h"
 #include "ml_types.h"
 
 #include <string.h>
@@ -1315,12 +1316,13 @@ typedef struct MLGraphicsFrameInfo {
   MLHandle wait_sync_object;
   uint32_t num_virtual_cameras;
   MLGraphicsVirtualCameraInfo virtual_cameras[MLGraphicsVirtualCameraName_Count];
+  MLTime predicted_display_time;
 } MLGraphicsFrameInfo;
 
 ML_STATIC_INLINE void MLGraphicsFrameInfoInit(MLGraphicsFrameInfo *inout_frame_info) {
   if (NULL != inout_frame_info) {
     memset(inout_frame_info, 0, sizeof(MLGraphicsFrameInfo));
-    inout_frame_info->version = 2;
+    inout_frame_info->version = 3;
     inout_frame_info->handle  = (MLHandle)ML_INVALID_HANDLE;
   }
 }
